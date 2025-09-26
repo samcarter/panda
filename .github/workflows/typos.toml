@@ -16,5 +16,5 @@ Arbor = "Arbor"
 artifact =  "artifact"
 
 [files]
-extend-exclude = ["*.svg", "LICENSE.txt"]
+extend-exclude = ["*.svg", "LICENSE.txt", "busyPanda.sty"]
 ignore-vcs = true
