@@ -11,15 +11,7 @@
 % See https://www.latex-project.org/lppl.txt
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% !TeX program = txs:///arara
-% arara: latexmk: {
-% arara: --> engine: pdflatex,
-% arara: --> options: [
-% arara: -->    '-shell-escape',
-% arara: -->    '-synctex=1',
-% arara: -->    '-interaction=nonstopmode',
-% arara: -->  ]
-% arara: --> }
+% arara: latexmk
 \documentclass{scrartcl}
 
 \usepackage[
@@ -32,6 +24,7 @@
 \author{%
   \texorpdfstring{
    \begin{tikzpicture}
+     \colorlet{black}{samdgray}
      \panda
    \end{tikzpicture}\\[0.8em]
    \texttt{samcarter}\\
@@ -41,21 +34,23 @@
 \date{Version v0.0 \textendash{} 2025/09/26}
 \packagename{panda}
 
-\colorlet{red}{samred}
-\colorlet{blue}{samlblue}
-\colorlet{orange}{samorange}
-\colorlet{teal}{samteal}
-
 \usepackage{busyPanda}
 \usepackage{tikzlings}
 
-\newcommand{\bamboo}[2]{%
+\newcommand{\bamboo}{%
+  \rule{%
+    \busyPanda{0.125}\fontcharht\font`I
+  }{%
+    \fontcharht\font`I
+  }%
+}
+
+\newcommand{\badbamboo}[2]{%
   \rule{#1}{#2}\,\rule{#1}{#2}\,\rule{#1}{#2}%
 }
 
 \begin{document}
 \maketitle
-\thispagestyle{scrheadings}
 
 \section{Introduction}
 \label{intro}
@@ -63,14 +58,14 @@
 Imagine the following problem:
 there is a hungry panda sitting next to you and just today, you happen to not have any bamboo with you.
 Now you are a \LaTeX\ user and the only limits are your own imagination, so of course you try to draw a couple of bamboo sticks with \LaTeX.
-Here dear panda, have three bamboo sticks: \bamboo{0.8pt}{\fontcharht\font`I}\,.
+Here dear panda, have three bamboo sticks: \badbamboo{0.8pt}{\fontcharht\font`I}\,.
 The panda likes them and wants to make more.
-{\fontfamily{ugq}\selectfont However the panda uses a different font and the bamboo sticks suddenly look a lot less tasty, they look just too thin: \bamboo{0.8pt}{\fontcharht\font`I}\,.}
+{\fontfamily{ugq}\selectfont However the panda uses a different font and the bamboo sticks suddenly look a lot less tasty, they look just too thin: \badbamboo{0.8pt}{\fontcharht\font`I}\,.}
 
 The panda package provides estimates for the stroke width of fonts and how black the fonts look on the page.
 Creators of symbols etc.\ can use these estimates to adjust their drawings to better blend in with the surrounding text.
 
-{\fontfamily{ugq}\selectfont Tasty bamboo sticks: \bamboo{\busyPanda{0.1}\fontcharht\font`I}{\fontcharht\font`I}}
+{\fontfamily{ugq}\selectfont Yummy bamboo sticks: \bamboo\,\bamboo\,\bamboo}
 
 Note that this package was developed and tested with texts in Latin scripts -- results might be less satisfactory if used with other scripts.
 
@@ -80,50 +75,105 @@ Note that this package was developed and tested with texts in Latin scripts -- r
 
 The clever panda approach provides an estimate ...
 
+\clearpage
 \section{Busy Panda}
 
-The approach of the busy panda is different.
-To get an estimate of how black text in a particular font looks like, I'm producing a sample pdf with:
+The approach of the Busy Panda is different.
+To get an estimate of how black text in a particular font looks like, the Busy Panda uses a sample PDF with:
 \begin{center}
 \ttfamily Lorem ipsum dolor sit amet, consectetur adip
 \end{center}
-After converting the pdf into a pixel graphic, I can calculate the average blackness of the pixel.
-After repeating this for different fonts (including their bold versions), I now have a look-up table with the average blackness for 8800 fonts, normalised to the average blackness of computer modern roman.
+After converting the PDF into a pixel graphic, the average blackness of the pixels can be calculated.
+After repeating this for different fonts (including their bold versions), the Busy Panda now contains a look-up table with the average blackness for about 8800 fonts, normalised to the average blackness of Computer Modern Roman.
 Tests with different sample texts and image resolutions indicate that the error of this method is about 10\%.
+While not perfect, this is usually accurate enough to make symbols blend in with the surrounding text.
 
 \subsection{Usage}
 
-\begin{tcblisting}{
-  title={Usage},
-  compilable listing sam,
-  comment={
-    \includegraphics{\jobname-listing-\thetcblistingcount}
-  },
-}
-\documentclass[varwidth,border=1pt]{standalone}
-
+The basic usage is simple: after loading the package, the command \saminline|\busyPanda{}| provides a normalised estimate of the blackness of the current font:
+\begin{tcolorbox}[title={Basic usage}]
+\begin{samcode}
+\documentclass{article}
 \usepackage{busyPanda}
+\begin{document}
+  cmr: \busyPanda{}
+
+  \fontfamily{ugq}\selectfont
+  ugq: \busyPanda{}
+\end{document}
+\end{samcode}
+\tcblower
+\raggedright
+cmr: \busyPanda{}
+
+\fontfamily{ugq}\selectfont
+ugq: \busyPanda{}
+\end{tcolorbox}
+
+There are two options for customisation: the \saminline|scale=| package option sets a default scaling value.
+For example, \saminline|scale=10| means that \saminline|\busyPanda{}| no longer returns 1 for Computer Modern Roman, but 10.
+The scaling factor can also be set locally in the mandatory argument, e.g.\ \saminline|\busyPanda{42}|.
+\begin{tcolorbox}[title={Options}]
+\begin{samcode}
+\documentclass{article}
+\usepackage[scale=10]{busyPanda}
+\begin{document}
+  cmr: \busyPanda{} \par
+  cmr: \busyPanda{42}
+\end{document}
+\end{samcode}
+\tcblower
+\raggedright
+cmr: \busyPanda{10}
+
+cmr: \busyPanda{42}
+\end{tcolorbox}
+
+\subsection{Creating symbols}
+
+There is still a hungry panda sitting next to you, so let's create some extra yummy bamboo sticks:
+\begin{tcolorbox}[title={Feeding the panda}]
+\begin{samcode}
+\documentclass{article}
+\usepackage{busyPanda}
+
+\newlength{\IHeight}
+\setlength{\IHeight}{\fontcharht\font`I}
 
 \newcommand{\bamboo}{%
   \rule{%
-    \busyPanda{0.1}\fontcharht\font`I
+    \busyPanda{0.125}\IHeight
   }{%
-    \fontcharht\font`I
-  }
+    \IHeight
+  }%
 }
 
 \begin{document}
+Normal bamboo: \bamboo
 
-normal cmr: \bamboo \par
-\bfseries bold cmr: \bamboo \par
-\normalfont \fontfamily{cmbr}
-normal cmbr: \bamboo \par
-\bfseries bold cmbr: \bamboo
+\fontfamily{ugq}\selectfont
+Extra yummy bamboo: \bamboo
 \end{document}
-\end{tcblisting}
+\end{samcode}
+\tcblower
+\raggedright
+Normal bamboo: \bamboo
+
+\fontfamily{ugq}\selectfont
+Extra yummy bamboo: \bamboo
+\end{tcolorbox}
+
+In the example above, \saminline|\busyPanda{}| is used in combination with the height of the letter I. This ensures that stroke width will scale with the size of the text.
 
 \subsection{Unsupported fonts}
 
-...
+Given the seemingly infinite number of fonts out there, this package will never be able to support them all -- but more can be added with your help!
+
+If the font you are using isn't yet supported (\saminline|\busyPanda{}| will return 1, like for Computer Modern Roman), then please get the test document from:
+
+\url{https://github.com/samcarter/panda/blob/main/busyPanda_unsupportedFonts.tex}
+
+You only need to change the font name in the second line and compile with either \saminline|pdflatex| or \saminline|lualatex|.
+Then open an issue at \url{https://github.com/samcarter/panda/issues} and upload the compiled PDF there.
 
 \end{document}
