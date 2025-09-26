@@ -1,0 +1,129 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Documentation for the panda package
+% A package to draw bricks with tikz
+% Maintained by samcarter
+%
+% Project repository and bug tracker:
+% https://github.com/samcarter/panda
+%
+% Released under the LaTeX Project Public License v1.3c or later
+% See https://www.latex-project.org/lppl.txt
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% !TeX program = txs:///arara
+% arara: latexmk: {
+% arara: --> engine: pdflatex,
+% arara: --> options: [
+% arara: -->    '-shell-escape',
+% arara: -->    '-synctex=1',
+% arara: -->    '-interaction=nonstopmode',
+% arara: -->  ]
+% arara: --> }
+\documentclass{scrartcl}
+
+\usepackage[
+  themecolor=samdgray
+]{\jobname-settings}
+
+% meta %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{The panda package}
+\subtitle{Estimating the blackness of fonts}
+\author{%
+  \texorpdfstring{
+   \begin{tikzpicture}
+     \panda
+   \end{tikzpicture}\\[0.8em]
+   \texttt{samcarter}\\
+   \url{https://github.com/samcarter/panda}\\
+%   \url{https://ctan.org/pkg/panda}
+  }{samcarter}}
+\date{Version v0.0 \textendash{} 2025/09/26}
+\packagename{panda}
+
+\colorlet{red}{samred}
+\colorlet{blue}{samlblue}
+\colorlet{orange}{samorange}
+\colorlet{teal}{samteal}
+
+\usepackage{busyPanda}
+\usepackage{tikzlings}
+
+\newcommand{\bamboo}[2]{%
+  \rule{#1}{#2}\,\rule{#1}{#2}\,\rule{#1}{#2}%
+}
+
+\begin{document}
+\maketitle
+\thispagestyle{scrheadings}
+
+\section{Introduction}
+\label{intro}
+
+Imagine the following problem:
+there is a hungry panda sitting next to you and just today, you happen to not have any bamboo with you.
+Now you are a \LaTeX\ user and the only limits are your own imagination, so of course you try to draw a couple of bamboo sticks with \LaTeX.
+Here dear panda, have three bamboo sticks: \bamboo{0.8pt}{\fontcharht\font`I}\,.
+The panda likes them and wants to make more.
+{\fontfamily{ugq}\selectfont However the panda uses a different font and the bamboo sticks suddenly look a lot less tasty, they look just too thin: \bamboo{0.8pt}{\fontcharht\font`I}\,.}
+
+The panda package provides estimates for the stroke width of fonts and how black the fonts look on the page.
+Creators of symbols etc.\ can use these estimates to adjust their drawings to better blend in with the surrounding text.
+
+{\fontfamily{ugq}\selectfont Tasty bamboo sticks: \bamboo{\busyPanda{0.1}\fontcharht\font`I}{\fontcharht\font`I}}
+
+Note that this package was developed and tested with texts in Latin scripts -- results might be less satisfactory if used with other scripts.
+
+\blurb*
+
+\section{Clever Panda}
+
+The clever panda approach provides an estimage
+
+\section{Busy Panda}
+
+The approach of the busy panda is different.
+To get an estimate of how black text in a particular font looks like, I'm producing a sample pdf with:
+\begin{center}
+\ttfamily Lorem ipsum dolor sit amet, consectetur adip
+\end{center}
+After converting the pdf into a pixel graphic, I can calculate the average blackness of the pixel.
+After repeating this for different fonts (including their bold versions), I now have a look-up table with the average blackness for 8800 fonts, normalised to the average blackness of computer modern roman.
+Tests with different sample texts and image resolutions indicate that the error of this method is about 10\%.
+
+\subsection{Usage}
+
+\begin{tcblisting}{
+  title={Usage},
+  compilable listing sam,
+  comment={
+    \includegraphics{\jobname-listing-\thetcblistingcount}
+  },
+}
+\documentclass[varwidth,border=1pt]{standalone}
+
+\usepackage{busyPanda}
+
+\newcommand{\bamboo}{%
+  \rule{%
+    \busyPanda{0.1}\fontcharht\font`I
+  }{%
+    \fontcharht\font`I
+  }
+}
+
+\begin{document}
+
+normal cmr: \bamboo \par
+\bfseries bold cmr: \bamboo \par
+\normalfont \fontfamily{cmbr}
+normal cmbr: \bamboo \par
+\bfseries bold cmbr: \bamboo
+\end{document}
+\end{tcblisting}
+
+\subsection{Unsupported fonts}
+
+...
+
+\end{document}
