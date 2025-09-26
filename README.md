@@ -6,7 +6,7 @@
 [![GitHub tag](https://img.shields.io/github/tag/samcarter/panda.svg?label=current%20version&color=blue)](https://github.com/samcarter/panda/releases/latest)
 [![CTAN](https://img.shields.io/ctan/v/panda.svg?color=blue)](https://ctan.org/pkg/panda)
 
-A package to estimage the blackness of fonts
+A package to estimate the blackness of fonts
 
 This project is licensed under the LaTeX Project Public License v1.3c or later, see https://www.latex-project.org/lppl.txt . 
 

@@ -11,7 +11,7 @@
 module = "panda"
 ctanpkg = "panda"
 ctanprefix = "/macros/latex/contrib/" 
-ctansummary = "A package to estimage the blackness of fonts"
+ctansummary = "A package to estimate the blackness of fonts"
 
 -- common settings =============================================================
 -- https://github.com/samcarter/beamertheme-sam/blob/main/build-settings.lua

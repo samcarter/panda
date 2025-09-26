@@ -12,7 +12,7 @@
 
 ### New
 
-- A package to estimage the blackness of fonts
+- A package to estimate the blackness of fonts
 
 ------
 
