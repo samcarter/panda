@@ -14,12 +14,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ProvidesPackage{busyPanda}[2025/09/26 version v0.1 Estimating blackness of fonts]
 
-\RequirePackage{xkeyval}
-
-% setting default value
-\DeclareOptionX{scale}[1.0]{\def\busyPanda@scale{#1}}
-\ExecuteOptionsX{scale}
-\ProcessOptionsX
+\DeclareKeys{scale.store=\busyPanda@scale}
+\SetKeys{scale=1.0}
+\ProcessKeyOptions
 
 \ExplSyntaxOn
 \NewExpandableDocumentCommand{ \busyPanda } { m } {
