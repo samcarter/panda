@@ -12,15 +12,14 @@ This project is licensed under the LaTeX Project Public License v1.3c or later, 
 
 The project repository, including a bug tracker, can be found at https://github.com/samcarter/panda .
 
-### Usage busyPanda
-
+### Usage CleverPanda
 ```latex
-\documentclass[varwidth]{standalone}
+\documentclass[varwidth,border=1pt]{standalone}
 
-\usepackage{busyPanda}
+\usepackage{CleverPanda}
 
 \newcommand{\bamboo}{%
-  \rule{\busyPanda{0.1}\fontcharht\font`I}{\fontcharht\font`I}
+  \rule{\CleverPanda{}}{\fontcharht\font`I}
 }
 
 \begin{document}
@@ -32,7 +31,34 @@ bold cmr: \bamboo
 
 \normalfont
 \fontfamily{cmbr}
+normal cmbr: \bamboo
 
+\bfseries
+bold cmbr: \bamboo
+
+\end{document}
+```
+
+### Usage BusyPanda
+
+```latex
+\documentclass[varwidth,border=1pt]{standalone}
+
+\usepackage{BusyPanda}
+
+\newcommand{\bamboo}{%
+  \rule{\BusyPanda{0.125}\fontcharht\font`I}{\fontcharht\font`I}
+}
+
+\begin{document}
+
+normal cmr: \bamboo
+
+\bfseries
+bold cmr: \bamboo
+
+\normalfont
+\fontfamily{cmbr}
 normal cmbr: \bamboo
 
 \bfseries
