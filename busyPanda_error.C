@@ -1,4 +1,4 @@
-// root -l busyPanda_error.C+
+// root -l BusyPanda_error.C+
 
 #include <iostream>
 #include <sstream>
@@ -7,7 +7,7 @@
 #include "TASImage.h"
 #include "TSystem.h"
 
-void busyPanda_error(){
+void BusyPanda_error(){
   
   int i, size, w, h;
   double fraction[19];
@@ -20,15 +20,15 @@ void busyPanda_error(){
     
     std::cout << i;
     std::ostringstream cmd;
-    cmd << "pdflatex --interaction=batchmode --jobname=\"busyPanda_fonttest\" '\\documentclass{standalone}\\usepackage{lipsum}\\begin{document}\\lipsum[1][" << i << "]\\end{document}' > /dev/null";
+    cmd << "pdflatex --interaction=batchmode --jobname=\"BusyPanda_fonttest\" '\\documentclass{standalone}\\usepackage{lipsum}\\begin{document}\\lipsum[1][" << i << "]\\end{document}' > /dev/null";
     int ret = gSystem->Exec(cmd.str().c_str());
     
     if ( ret == 0 ){
 
-      gSystem->Exec("pdftocairo -png -r 2000 -singlefile busyPanda_fonttest.pdf busyPanda_fonttest");
+      gSystem->Exec("pdftocairo -png -r 2000 -singlefile BusyPanda_fonttest.pdf BusyPanda_fonttest");
       
       // open image
-      im = (TASImage*) TASImage::Open("busyPanda_fonttest.png");
+      im = (TASImage*) TASImage::Open("BusyPanda_fonttest.png");
       w = im->GetWidth();
       h = im->GetHeight();
       UInt_t* arr = im->GetArgbArray();

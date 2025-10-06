@@ -1,4 +1,4 @@
-% !TeX root = ./busyPanda_test.tex
+% !TeX root = ./BusyPanda_test.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % This package is part of the Panda package
@@ -12,16 +12,16 @@
 % See https://www.latex-project.org/lppl.txt
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\ProvidesPackage{busyPanda}[2025/09/26 version v0.1 Estimating blackness of fonts]
+\ProvidesPackage{BusyPanda}[2025/09/26 version v0.1 Estimating blackness of fonts]
 
-\DeclareKeys{scale.store=\busyPanda@scale}
+\DeclareKeys{scale.store=\BusyPanda@scale}
 \SetKeys{scale=1.0}
 \ProcessKeyOptions
 
 \ExplSyntaxOn
-\NewExpandableDocumentCommand{ \busyPanda } { m } {
+\NewExpandableDocumentCommand{ \BusyPanda } { m } {
   \fp_eval:n {
-    \tl_if_blank:nTF { #1 } { \busyPanda@scale } { #1 }
+    \tl_if_blank:nTF { #1 } { \BusyPanda@scale } { #1 }
     *
     \tl_if_head_eq_charcode:VNTF { \f@series } b {
       % bold fonts
@@ -4423,7 +4423,12 @@
         {ztm Regular(0)}{1.23939}
         {ztm Regular Italic(0)}{1.13466}
         {ztm Regular Oblique(0)}{1.24055}
-      }{1.37779}
+      }{
+        \sys_if_engine_luatex:T {
+          \directlua{texio.write_nl("\string\n Package~panda~Warning:~ Font~\luaescapestring{\f@family}~not~in~look-up~table\string\n (panda)\@spaces\@spaces\@spaces\@spaces Please~see~section~3.3~of~the~documentation.\string\n\string\n")}
+        }
+        1.37779
+      }
     }{
       % normal fonts
       \str_case_e:nnF { \f@family } {
@@ -8824,7 +8829,12 @@
         {ztm Regular(0)}{1.23939}
         {ztm Regular Italic(0)}{1.13466}
         {ztm Regular Oblique(0)}{1.24055}
-      }{1}
+      }{
+        \sys_if_engine_luatex:T {
+          \directlua{texio.write_nl("\string\n Package~panda~Warning:~ Font~\luaescapestring{\f@family}~not~in~look-up~table\string\n (panda)\@spaces\@spaces\@spaces\@spaces Please~see~section~3.3~of~the~documentation.\string\n\string\n")}
+        }
+        1
+      }
     }
   }
 }

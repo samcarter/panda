@@ -1,4 +1,4 @@
-// root -l busyPanda_measure.C+
+// root -l BusyPanda_measure.C+
 
 #include <iostream>
 #include <sstream>
@@ -7,7 +7,7 @@
 #include "TASImage.h"
 #include "TSystem.h"
 
-void busyPanda_measure(){
+void BusyPanda_measure(){
   
   bool lualatex = false;
   bool bold = false;
@@ -22,10 +22,10 @@ void busyPanda_measure(){
   // switching compiler
   if( lualatex ){
     compiler = "lualatex";
-    fontsfilename = "busyPanda_fonts_lualatex.dat";
+    fontsfilename = "BusyPanda_fonts_lualatex.dat";
   }else{
     compiler = "pdflatex";
-    fontsfilename = "busyPanda_fonts_pdflatex.dat";
+    fontsfilename = "BusyPanda_fonts_pdflatex.dat";
   }
   
   // reading in fonts from file
@@ -47,18 +47,18 @@ void busyPanda_measure(){
     // generating sample png
     std::ostringstream cmd;
     if( bold ){
-      cmd << compiler << " --interaction=batchmode '\\def\\quack{" << font[i] << "}\\AtBeginDocument{\\bfseries}\\input{busyPanda_fonttest.tex}' > /dev/null";
+      cmd << compiler << " --interaction=batchmode '\\def\\quack{" << font[i] << "}\\AtBeginDocument{\\bfseries}\\input{BusyPanda_fonttest.tex}' > /dev/null";
     }else{
-      cmd << compiler << " --interaction=batchmode '\\def\\quack{" << font[i] << "}\\input{busyPanda_fonttest.tex}' > /dev/null";
+      cmd << compiler << " --interaction=batchmode '\\def\\quack{" << font[i] << "}\\input{BusyPanda_fonttest.tex}' > /dev/null";
     }
     int ret = gSystem->Exec(cmd.str().c_str());
     
     if ( ret == 0 ){
 
-      gSystem->Exec("pdftocairo -png -r 2000 -singlefile busyPanda_fonttest.pdf busyPanda_fonttest");
+      gSystem->Exec("pdftocairo -png -r 2000 -singlefile BusyPanda_fonttest.pdf BusyPanda_fonttest");
       
       // open image
-      im = (TASImage*) TASImage::Open("busyPanda_fonttest.png");
+      im = (TASImage*) TASImage::Open("BusyPanda_fonttest.png");
       w = im->GetWidth();
       h = im->GetHeight();
       UInt_t* arr = im->GetArgbArray();

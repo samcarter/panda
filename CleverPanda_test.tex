@@ -1,22 +1,18 @@
 \documentclass[varwidth,border=5pt]{standalone}
 
-\usepackage{BusyPanda}
+\usepackage{CleverPanda}
 
-\usepackage{iftex}
-
-\ifluatex
-\else
-  \usepackage[B1,LY1,T1]{fontenc}
-  \usepackage{aurical}
-\fi
+\usepackage[B1,LY1,T1]{fontenc}
+\usepackage{aurical}
+\newlength{\IHeight}
 
 \usepackage{tikz}
-\newlength{\IHeight}
 \newcommand{\quack}{%
   \setlength{\IHeight}{\fontcharht\font`I}%
-  \rule{\BusyPanda{0.1}\IHeight}{\IHeight}
+  \rule{\CleverPanda{}}{\IHeight}
+  \CleverPandaSet
   \begin{tikzpicture}[baseline]
-    \draw[line width=\BusyPanda{0.1}\IHeight]
+    \draw[line width=\CleverPandaGet{}]
       (0,0) -- (\IHeight,\IHeight)
       (0,\IHeight) -- (\IHeight,0);
   \end{tikzpicture}%

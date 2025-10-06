@@ -34,12 +34,13 @@
 \date{Version v0.0 \textendash{} 2025/09/26}
 \packagename{panda}
 
-\usepackage{busyPanda}
+\usepackage{BusyPanda}
+\usepackage{CleverPanda}
 \usepackage{tikzlings}
 
 \newcommand{\bamboo}{%
   \rule{%
-    \busyPanda{0.125}\fontcharht\font`I
+    \BusyPanda{0.125}\fontcharht\font`I
   }{%
     \fontcharht\font`I
   }%
@@ -47,6 +48,15 @@
 
 \newcommand{\badbamboo}[2]{%
   \rule{#1}{#2}\,\rule{#1}{#2}\,\rule{#1}{#2}%
+}
+
+\newlength{\IHeight}
+\newcommand{\tikzbamboo}{%
+  \setlength{\IHeight}{\fontcharht\font`I}%
+  \CleverPandaSet
+  \begin{tikzpicture}[baseline]
+    \draw[line width=\CleverPandaGet{}] (0,0) -- (0,\IHeight);
+  \end{tikzpicture}%
 }
 
 \begin{document}
@@ -73,7 +83,87 @@ Note that this package was developed and tested with texts in Latin scripts -- r
 
 \section{Clever Panda}
 
-The clever panda approach provides an estimate ...
+The Clever Panda approach is inspired by an answer by @Skillmon\footnote{see \url{https://topanswers.xyz/tex?q=8139\#a7747}}, which uses the difference between the height of a full stop and 1\,pt to estimate a proxy for the stroke width of the current font.
+
+The Clever Panda directly uses a fraction the full stops height and combines this with a manually curated list of exceptions.
+
+\subsection{Usage (simple case)}
+
+After loading the package, the command \saminline|\CleverPanda{}| will expand to a length, which can be used as stroke width for drawing symbols etc., which should blend in with the surrounding font.
+\begin{tcolorbox}[title={Basic usage}]
+\begin{samcode}
+\documentclass{article}
+\usepackage{CleverPanda}
+\begin{document}
+  cmr: \rule{ \CleverPanda{} }{8pt}
+
+  \fontfamily{ugq}\selectfont
+  ugq: \rule{ \CleverPanda{} }{8pt}
+\end{document}
+\end{samcode}
+\tcblower
+\raggedright
+cmr: \rule{\CleverPanda{}}{8pt}
+
+\fontfamily{ugq}\selectfont
+ugq: \rule{\CleverPanda{}}{8pt}
+\end{tcolorbox}
+
+There are two options for customisation: the \saminline|scale=...| package option sets a default scaling value.
+For example, \saminline|scale=10| means that \saminline|\CleverPanda{}| returns a length ten times as long as it normally would.
+The scaling factor can also be set locally in the mandatory argument, e.g.\ \saminline|\CleverPanda{42}|.
+\begin{tcolorbox}[title={Options}]
+\begin{samcode}
+\documentclass{article}
+\usepackage[scale=10]{CleverPanda}
+\begin{document}
+  cmr: \rule{ \CleverPanda{} }{8pt}
+
+  cmr: \rule{ \CleverPanda{42} }{8pt}
+\end{document}
+\end{samcode}
+\tcblower
+\raggedright
+cmr: \rule{\CleverPanda{10}}{8pt}
+
+cmr: \rule{\CleverPanda{42}}{8pt}
+\end{tcolorbox}
+
+\subsection{Special Case (\TikZ)}
+
+The \saminline|\CleverPanda{}| command works well, as long as the height of the full stop is available when the macro is used. Unfortunately, that's not always the case.
+
+One notable problematic case are \TikZ\ options. As a workaround, one can use the command \saminline|\CleverPandaSet| before the \TikZ\ picture and then \saminline|\CleverPandaGet{}| in the \TikZ\ options to access the stroke width as normal:
+\begin{tcolorbox}[title={\TikZ}]
+\begin{samcode}
+\documentclass{article}
+\usepackage{CleverPanda}
+\usepackage{tikz}
+\newlength{\IHeight}
+
+\newcommand{\tikzbamboo}{%
+  \setlength{\IHeight}{\fontcharht\font`I}%
+  \CleverPandaSet
+  \begin{tikzpicture}[baseline]
+    \draw[line width=\CleverPandaGet{}]
+         (0,0) -- (0,\IHeight);
+  \end{tikzpicture}%
+}
+
+\begin{document}
+  cmr:  \tikzbamboo
+
+  \fontfamily{ugq}\selectfont
+  ugq: \tikzbamboo
+\end{document}
+\end{samcode}
+\tcblower
+\raggedright
+cmr:  \tikzbamboo
+
+\fontfamily{ugq}\selectfont
+ugq: \tikzbamboo
+\end{tcolorbox}
 
 \clearpage
 \section{Busy Panda}
@@ -90,43 +180,44 @@ While not perfect, this is usually accurate enough to make symbols blend in with
 
 \subsection{Usage}
 
-The basic usage is simple: after loading the package, the command \saminline|\busyPanda{}| provides a normalised estimate of the blackness of the current font:
+The basic usage is simple: after loading the package, the command \saminline|\BusyPanda{}| provides a normalised estimate of the blackness of the current font:
 \begin{tcolorbox}[title={Basic usage}]
 \begin{samcode}
 \documentclass{article}
-\usepackage{busyPanda}
+\usepackage{BusyPanda}
 \begin{document}
-  cmr: \busyPanda{}
+  cmr: \BusyPanda{}
 
   \fontfamily{ugq}\selectfont
-  ugq: \busyPanda{}
+  ugq: \BusyPanda{}
 \end{document}
 \end{samcode}
 \tcblower
 \raggedright
-cmr: \busyPanda{}
+cmr: \BusyPanda{}
 
 \fontfamily{ugq}\selectfont
-ugq: \busyPanda{}
+ugq: \BusyPanda{}
 \end{tcolorbox}
 
-There are two options for customisation: the \saminline|scale=| package option sets a default scaling value.
-For example, \saminline|scale=10| means that \saminline|\busyPanda{}| no longer returns 1 for Computer Modern Roman, but 10.
-The scaling factor can also be set locally in the mandatory argument, e.g.\ \saminline|\busyPanda{42}|.
+There are two options for customisation: the \saminline|scale=...| package option sets a default scaling value.
+For example, \saminline|scale=10| means that \saminline|\BusyPanda{}| no longer returns 1 for Computer Modern Roman, but 10.
+The scaling factor can also be set locally in the mandatory argument, e.g.\ \saminline|\BusyPanda{42}|.
 \begin{tcolorbox}[title={Options}]
 \begin{samcode}
 \documentclass{article}
-\usepackage[scale=10]{busyPanda}
+\usepackage[scale=10]{BusyPanda}
 \begin{document}
-  cmr: \busyPanda{} \par
-  cmr: \busyPanda{42}
+  cmr: \BusyPanda{}
+
+  cmr: \BusyPanda{42}
 \end{document}
 \end{samcode}
 \tcblower
 \raggedright
-cmr: \busyPanda{10}
+cmr: \BusyPanda{10}
 
-cmr: \busyPanda{42}
+cmr: \BusyPanda{42}
 \end{tcolorbox}
 
 \subsection{Creating symbols}
@@ -135,14 +226,14 @@ There is still a hungry panda sitting next to you, so let's create some extra yu
 \begin{tcolorbox}[title={Feeding the panda}]
 \begin{samcode}
 \documentclass{article}
-\usepackage{busyPanda}
+\usepackage{BusyPanda}
 
 \newlength{\IHeight}
-\setlength{\IHeight}{\fontcharht\font`I}
 
 \newcommand{\bamboo}{%
+  \setlength{\IHeight}{\fontcharht\font`I}%
   \rule{%
-    \busyPanda{0.125}\IHeight
+    \BusyPanda{0.125}\IHeight
   }{%
     \IHeight
   }%
@@ -163,15 +254,15 @@ Normal bamboo: \bamboo
 Extra yummy bamboo: \bamboo
 \end{tcolorbox}
 
-In the example above, \saminline|\busyPanda{}| is used in combination with the height of the letter I. This ensures that stroke width will scale with the size of the text.
+In the example above, \saminline|\BusyPanda{}| is used in combination with the height of the letter I. This ensures that stroke width will scale with the size of the text.
 
 \subsection{Unsupported fonts}
 
 Given the seemingly infinite number of fonts out there, this package will never be able to support them all -- but more can be added with your help!
 
-If the font you are using isn't yet supported (\saminline|\busyPanda{}| will return 1, like for Computer Modern Roman), then please get the test document from:
+If the font you are using isn't yet supported (\saminline|\BusyPanda{}| will return 1, like for Computer Modern Roman and -- if compiled with \LuaLaTeX\ -- a warning can be found in the .log file), then please get the test document from:
 
-\url{https://github.com/samcarter/panda/blob/main/busyPanda_unsupportedFonts.tex}
+\url{https://github.com/samcarter/panda/blob/main/BusyPanda_unsupportedFonts.tex}
 
 You only need to change the font name in the second line and compile with either \saminline|pdflatex| or \saminline|lualatex|.
 Then open an issue at \url{https://github.com/samcarter/panda/issues} and upload the compiled PDF there.

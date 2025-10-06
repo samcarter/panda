@@ -1,0 +1,191 @@
+% !TeX root = ./CleverPanda_test.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This package is part of the Panda package
+% A package to estimate the blackness of fonts
+% Maintained by samcarter
+%
+% Project repository and bug tracker:
+% https://github.com/samcarter/panda
+%
+% Released under the LaTeX Project Public License v1.3c or later
+% See https://www.latex-project.org/lppl.txt
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{CleverPanda}[2025/09/26 version v0.1 Estimating blackness of fonts]
+
+\DeclareKeys{scale.code = \def\CleverPanda@scale{#1}}
+\SetKeys{scale=1.0}
+\ProcessKeyOptions
+
+\ExplSyntaxOn
+\dim_new:N \CleverPanda@stroke
+
+\cs_new_nopar:Npn \CleverPanda@factor {
+  \tl_if_head_eq_charcode:VNT { \f@series } b {
+    \str_case_e:nnT {\f@family} {
+      {pag}{1.2}
+      {qag}{1.2}
+      {qcr}{1.2}
+      {GilliusADF-LF}{1.5}
+      {fve}{1.2}
+      {bodoni}{1.0}
+      {udidot}{1.2}
+      {JanaSkrivana}{1.0}
+      {LinuxLibertineMonoT-TLF}{1.0}
+      {LukasSvatba}{0.9}
+      {ul9}{1.0}
+      {PTMono-TLF}{1.0}
+      {Courier New(0)}{1.0}
+      {Lao MN(0)}{0.8}
+      {Lithos Pro(0)}{1}
+      {Myanmar MN(0)}{0.8}
+      {STIX Two Text(0)}{0.8}
+      {STIX Two Text (family)(0)}{0.8}
+      {Thonburi(0)}{1}
+      {Verdana(0)}{0.8}
+    }{\use_none_delimit_by_q_stop:w}
+  }
+  \str_case_e:nnF {\f@family} {
+    {cmss}{1.0}
+    {clms}{1.0}
+    {clmqs}{1.0}
+    {phv}{1.0}
+    {ugq}{1.0}
+    {qcr}{0.5}
+    {MintSpirit-LF}{0.8}
+    {yvod}{0.5}
+    {auncl}{0.3}
+    {augie}{1.3}
+    {sqrc}{0.25}
+    {DejaVuSerif-TLF}{0.9}
+    {DejaVuSans-TLF}{0.9}
+    {cmin}{0.25}
+    {ClearSans-TLF}{0.9}
+    {comfortaa}{0.9}
+    {cyklop}{1.3}
+    {frc}{0.15}
+    {nanummj}{3}
+    {nanumgt}{6}
+    {pbk}{0.9}
+    {qhv}{1.2}
+    {qhvc}{0.9}
+    {Alegreya-OsF}{0.9}
+    {Alegreya-TLF}{0.9}
+    {AlegreyaSans-OsF}{0.9}
+    {AnonymousPro}{1.1}
+    {GilliusADF-LF}{1.0}
+    {GilliusADFNoTwo-LF}{0.9}
+    {UniversalisADFStd-LF}{1.0}
+    {yrd}{1.0}
+    {fve}{0.9}
+    {droidserif}{1.0}
+    {droidsans}{1.0}
+    {FiraSans-TLF}{1.0}
+    {artemisia}{1.0}
+    {zi4}{1.0}
+    {iwona}{0.9}
+    {lato-OsF}{1.0}
+    {LibreBskvl-LF}{1.0}
+    {LibreCsln-TLF}{0.9}
+    {LinuxBiolinumT-OsF}{1.0}
+    {Lbstr-LF}{0.9}
+    {nanummj}{2.5}
+    {nanumgt}{5}
+    {opensans-TLF}{1.0}
+    {PTSans-TLF}{1.0}
+    {PTSansNarrow-TLF}{1.0}
+    {PTSansCaption-TLF}{1.0}
+    {Roboto-TLF}{1.0}
+    {RobotoSlab-TLF}{1.1}
+    {neohellenic}{1.1}
+    {Quattro-LF}{1.1}
+    {QuattroSans-LF}{1.1}
+    {Academy Engraved LET Plain:1.0(0)}{0.25}
+    {American Typewriter Condensed Light(0)}{0.3}
+    {American Typewriter Light(0)}{0.3}
+    {BlackoakStd(0)}{1}
+    {Clip(0)}{0.35}
+    {Cochin Italic(0)}{.4}
+    {Comic Sans MS(0)}{1}
+    {Comic Sans MS Bold(0)}{1.5}
+    {Courier New(0)}{0.3}
+    {Cyklop-Regular(0)}{1}
+    {Cyklop(0)}{1}
+    {DulceChico(0)}{1}
+    {Gill Sans UltraBold(0)}{1}
+    {Gurmukhi MN Bold(0)}{0.8}
+    {Hammerhead(0)}{0.8}
+    {Hammerhead Black(0)}{1}
+    {Heiti SC Light(0)}{0.3}
+    {Heiti SC Medium(0)}{0.3}
+    {Heiti TC Light(0)}{0.3}
+    {Heiti TC Medium(0)}{0.3}
+    {Impact(0)}{1.0}
+    {JetBrains Mono NL Thin(0)}{0.3}
+    {JetBrains Mono NL Thin Italic(0)}{0.3}
+    {JetBrains Mono Thin(0)}{0.3}
+    {JetBrains Mono Thin Italic(0)}{0.3}
+    {Lao MN Bold(0)}{0.8}
+    {Linux Biolinum Keyboard O(0)}{0.1}
+    {Linux Libertine Capitals Semibold Italic(0)}{0.8}
+    {Lithos Pro Black(0)}{1}
+    {Lithos Pro-Black(0)}{1}
+    {Marion Bold(0)}{0.8}
+    {Marker Felt Thin(0)}{0.8}
+    {Marker Felt Wide(0)}{1}
+    {Menlo Italic(0)}{0.4}
+    {Menlo Regular(0)}{0.4}
+    {MesloLGS NF Italic(0)}{0.4}
+    {MesloLGS NF Regular(0)}{0.4}
+    {Myanmar MN Bold(0)}{0.8}
+    {Noto Mono(0)}{0.5}
+    {OCRAStd(0)}{0.3}
+    {Pennstander Math Thin(0)}{0.4}
+    {Phosphate Solid(0)}{1}
+    {PoplarStd(0)}{1}
+    {STHeiti(0)}{0.35}
+    {STIX Two Text Bold(0)}{0.8}
+    {STIX Two Text Bold Italic(0)}{0.8}
+    {STSong(0)}{0.3}
+    {Saira Stencil One Regular(0)}{1}
+    {Songti SC Light(0)}{0.4}
+    {Songti SC Regular(0)}{0.4}
+    {Songti TC Light(0)}{0.4}
+    {Songti TC Regular(0)}{0.4}
+    {Verdana Bold(0)}{0.8}
+    {XB Yas(0)}{0.4}
+    {Yas(0)}{0.4}
+    {Yas Italic(0)}{0.4}
+  }{0.7}
+  \use_none:n \q_stop
+}
+
+\NewExpandableDocumentCommand{\CleverPanda}{m}{
+  \dim_eval:n {
+    \fp_eval:n {
+      \tl_if_blank:nTF { #1 } { \CleverPanda@scale } { #1 }
+      *
+      \CleverPanda@factor
+    }
+    \tex_fontcharht:D \tex_font:D `.
+  }
+}
+
+\NewExpandableDocumentCommand{\CleverPandaGet}{m}{
+  \dim_eval:n {
+    \fp_eval:n {
+      \tl_if_blank:nTF { #1 } { \CleverPanda@scale } { #1 }
+      *
+      \CleverPanda@factor
+    }
+    \CleverPanda@stroke
+  }
+}
+
+\NewDocumentCommand{\CleverPandaSet}{}{
+  \dim_set:Nn \CleverPanda@stroke {\tex_fontcharht:D \tex_font:D `.}
+}
+
+
+\ExplSyntaxOff
