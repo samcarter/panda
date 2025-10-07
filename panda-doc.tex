@@ -97,6 +97,8 @@ The Clever Panda approach is inspired by a brilliant answer by @Skillmon\footnot
 
 The Clever Panda uses a simpler approach of directly employing a fraction the full stop height and combines this with a manually curated list of exceptions.
 
+Compared to the Busy Panda approach, described in the next section, this approach should be faster and isn't limited to what fonts in a loop-up table.
+
 \subsection{Usage (simple case)}
 
 After loading the package, the command \saminline|\CleverPanda{}| will expand to a length, which can be used as stroke width for drawing symbols etc.
@@ -187,6 +189,8 @@ After converting the PDF into a pixel graphic, the average blackness of the pixe
 After repeating this for different fonts (including their bold versions), the Busy Panda now contains a look-up table with the average blackness for about 8800 fonts, normalised to the average blackness of Computer Modern Roman.
 Tests with different sample texts and image resolutions indicate that the error of this method is about 10\%.
 While not perfect, this is usually accurate enough to make symbols blend in with the surrounding text.
+
+Compared to the Clever Panda approach from the previous section, this approach gives more accurate results, in particular for very heavy fonts, and is more versatile to use.
 
 \subsection{Usage}
 
