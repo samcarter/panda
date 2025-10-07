@@ -37,20 +37,28 @@
 \usepackage{BusyPanda}
 \usepackage{CleverPanda}
 \usepackage{tikzlings}
-
-\newcommand{\bamboo}{%
-  \rule{%
-    \BusyPanda{0.125}\fontcharht\font`I
-  }{%
-    \fontcharht\font`I
-  }%
+\usepackage{tabularray}
+\UseTblrLibrary{counter}
+\newlength{\IHeight}
+\NewTblrTheme{naked}{
+  \DefTblrTemplate{foot}{empty}{}
+  \SetTblrTemplate{foot}{empty}
+  \DefTblrTemplate{head}{empty}{}
+  \SetTblrTemplate{head}{empty}
 }
 
 \newcommand{\badbamboo}[2]{%
   \rule{#1}{#2}\,\rule{#1}{#2}\,\rule{#1}{#2}%
 }
 
-\newlength{\IHeight}
+\newcommand{\cleverbamboo}{%
+  \rule{ \CleverPanda{} }{ \fontcharht\font`I }%
+}
+
+\newcommand{\busybamboo}{%
+  \rule{ \BusyPanda{0.125}\fontcharht\font`I }{ \fontcharht\font`I }%
+}
+
 \newcommand{\tikzbamboo}{%
   \setlength{\IHeight}{\fontcharht\font`I}%
   \CleverPandaSet
@@ -75,7 +83,9 @@ The panda likes them and wants to make more.
 The panda package provides estimates for the stroke width of fonts and how black the fonts look on the page.
 Creators of symbols etc.\ can use these estimates to adjust their drawings to better blend in with the surrounding text.
 
-{\fontfamily{ugq}\selectfont Yummy bamboo sticks: \bamboo\,\bamboo\,\bamboo}
+{\fontfamily{ugq}\selectfont Yummy bamboo sticks: \busybamboo\,\busybamboo\,\busybamboo}
+
+The results won't be a perfect match for all fonts and strokes can also look differently compared to the surrounding text depending on the PDF viewer and zoom level, but the results should be good enough to ensure that the symbols don't stand out immediately.
 
 Note that this package was developed and tested with texts in Latin scripts -- results might be less satisfactory if used with other scripts.
 
@@ -83,13 +93,13 @@ Note that this package was developed and tested with texts in Latin scripts -- r
 
 \section{Clever Panda}
 
-The Clever Panda approach is inspired by an answer by @Skillmon\footnote{see \url{https://topanswers.xyz/tex?q=8139\#a7747}}, which uses the difference between the height of a full stop and 1\,pt to estimate a proxy for the stroke width of the current font.
+The Clever Panda approach is inspired by a brilliant answer by @Skillmon\footnote{see \url{https://topanswers.xyz/tex?q=8139\#a7747}}, which uses the difference between the height of a full stop and 1\,pt to estimate a proxy for the stroke width of the current font.
 
-The Clever Panda directly uses a fraction the full stops height and combines this with a manually curated list of exceptions.
+The Clever Panda uses a simpler approach of directly employing a fraction the full stop height and combines this with a manually curated list of exceptions.
 
 \subsection{Usage (simple case)}
 
-After loading the package, the command \saminline|\CleverPanda{}| will expand to a length, which can be used as stroke width for drawing symbols etc., which should blend in with the surrounding font.
+After loading the package, the command \saminline|\CleverPanda{}| will expand to a length, which can be used as stroke width for drawing symbols etc.
 \begin{tcolorbox}[title={Basic usage}]
 \begin{samcode}
 \documentclass{article}
@@ -133,7 +143,7 @@ cmr: \rule{\CleverPanda{42}}{8pt}
 
 The \saminline|\CleverPanda{}| command works well, as long as the height of the full stop is available when the macro is used. Unfortunately, that's not always the case.
 
-One notable problematic case are \TikZ\ options. As a workaround, one can use the command \saminline|\CleverPandaSet| before the \TikZ\ picture and then \saminline|\CleverPandaGet{}| in the \TikZ\ options to access the stroke width as normal:
+One notable problem case are \TikZ\ options, e.g. while setting line widths. As a workaround, one can use the command \saminline|\CleverPandaSet| before the \TikZ\ picture and then \saminline|\CleverPandaGet{}| in the \TikZ\ options to access the stroke width:
 \begin{tcolorbox}[title={\TikZ}]
 \begin{samcode}
 \documentclass{article}
@@ -227,7 +237,6 @@ There is still a hungry panda sitting next to you, so let's create some extra yu
 \begin{samcode}
 \documentclass{article}
 \usepackage{BusyPanda}
-
 \newlength{\IHeight}
 
 \newcommand{\bamboo}{%
@@ -248,10 +257,10 @@ Extra yummy bamboo: \bamboo
 \end{samcode}
 \tcblower
 \raggedright
-Normal bamboo: \bamboo
+Normal bamboo: \busybamboo
 
 \fontfamily{ugq}\selectfont
-Extra yummy bamboo: \bamboo
+Extra yummy bamboo: \busybamboo
 \end{tcolorbox}
 
 In the example above, \saminline|\BusyPanda{}| is used in combination with the height of the letter I. This ensures that stroke width will scale with the size of the text.
@@ -266,5 +275,31 @@ If the font you are using isn't yet supported (\saminline|\BusyPanda{}| will ret
 
 You only need to change the font name in the second line and compile with either \saminline|pdflatex| or \saminline|lualatex|.
 Then open an issue at \url{https://github.com/samcarter/panda/issues} and upload the compiled PDF there.
+
+\clearpage
+\section{Examples}
+
+\ExplSyntaxOn
+
+\clist_const:Nn \c_days_clist { AccanthisADFStdNoThree-LF, Alegreya-OsF, Alegreya-TLF, AnonymousPro, antp, antt, anttc, anttl, anttlc, artemisia, augie, auncl, bch, bodoni, Cabin-TLF, Caladea-TLF, cantarell-OsF, ccr, Cinzel-LF, CinzelDecorative-LF, ClearSans-TLF, clm, clmd, clmqs, clms, clmt, clmv, cmbr, cmdh, cmin, cmr, cmss, cmtt, cmvtt, comfortaa, Crlt-TLF, cyklop, DejaVuSans-TLF, DejaVuSansMono-TLF, DejaVuSerif-TLF, droidsans, droidsansmono, droidserif, EBGaramond-OsF, erewhon-OsF, fav, fbb-LF, FiraSans-TLF, frc, fve, fvm, fvs, GilliusADF-LF, GilliusADFNoTwo-LF, Heuristica-TLF, iwona, iwonac, iwonal, iwonalc, jkp, jkp, jkpl, jkpss, jkpss, jkptt, jkpx, kurier, kurierc, kurierl, kurierlc, lato-OsF, Lbstr-LF, LibreBskvl-LF, LibreCsln-TLF, LinuxBiolinumT-OsF, LinuxLibertineDisplayT-OsF, LinuxLibertineMonoT-TLF, LinuxLibertineT-OsF, Merriwthr-OsF, MerriwthrSans-TLF, MintSpirit-LF, nanumgt, nanummj, neohellenic, opensans-TLF, Ovrlck-LF, Ovrlck-LF, pag, pbk, pcr, phv, PlyfrDisplay-OsF, pnc, ppl, ptm, PTMono-TLF, PTSans-TLF, PTSansCaption-TLF, PTSansNarrow-TLF, PTSerif-TLF, PTSerifCaption-TLF, put, pzc, qag, qbk, qcr, qcs, qhv, qhvc, qpl, qtm, Quattro-LF, QuattroSans-LF, Roboto-TLF, RobotoSlab-TLF, SourceCodePro-TLF, SourceSansPro-TLF, sqrc, stix, ua1, uaq, udidot, ugm, ugq, ul9, ulg, UniversalisADFStd-LF, uop, ybd, ybv, yes, yfrak, yly, yrd, yv1, yv1d, yv2, yv3, yvo, yvod, yvt, yvtd, zgmx, zi4 }
+
+% from https://tex.stackexchange.com/a/728458/36296
+\tl_new:N \l_explorer_tblr_spec_tl
+\cs_new:Npn \__explorer_tblr_gen:n #1 { \clist_item:Nn \c_days_clist { #1 }  &  & \\}
+\tl_set:Ne \l_explorer_tblr_spec_tl { \int_step_function:nN {144} \__explorer_tblr_gen:n }
+\SetTblrOuter[longtblr]{expand=\l_explorer_tblr_spec_tl}
+\begin{longtblr}[theme=naked]{
+  colspec={@{}Xll@{}},
+  hline{1,2,Z}={0.7pt},
+  row{2-Z}={font=\fontfamily{\clist_item:Nn \c_days_clist {\therownum-1}}\selectfont},
+  cell{2-Z}{2}={cmd={Lorem~\cleverbamboo\space Lipsum}},
+  cell{2-Z}{3}={cmd={Lorem~\busybamboo\space Lipsum}},
+  rowhead = 1
+}
+  Font~Family & Clever~Panda & Busy~Panda\\
+  \l_explorer_tblr_spec_tl
+\end{longtblr}
+
+\ExplSyntaxOff
 
 \end{document}
