@@ -8,6 +8,8 @@
 
 A package to estimate the blackness of fonts
 
+One challenge when drawing icons or symbols can be to make them blend in with the surrounding text. If their line widths look good with one font, they can stand out like a sore thumb with another font. The panda package provides tools to automatically adjust line widths etc. to fit in with the surrounding font.
+
 This project is licensed under the LaTeX Project Public License v1.3c or later, see https://www.latex-project.org/lppl.txt . 
 
 The project repository, including a bug tracker, can be found at https://github.com/samcarter/panda .
