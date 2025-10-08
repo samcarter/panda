@@ -32,7 +32,7 @@ normal cmr: \bamboo
 bold cmr: \bamboo
 
 \normalfont
-\fontfamily{cmbr}
+\fontfamily{cmbr}\selectfont
 normal cmbr: \bamboo
 
 \bfseries
@@ -60,7 +60,7 @@ normal cmr: \bamboo
 bold cmr: \bamboo
 
 \normalfont
-\fontfamily{cmbr}
+\fontfamily{cmbr}\selectfont
 normal cmbr: \bamboo
 
 \bfseries
