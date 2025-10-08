@@ -1,28 +1,14 @@
 525round 
 525square 
+Aboensis Regular 
+Aboriginal Serif 
+Academy Engraved LET Plain:1.0 
 ACaslonPro-Bold 
 ACaslonPro-BoldItalic 
 ACaslonPro-Italic 
 ACaslonPro-Regular 
 ACaslonPro-Semibold 
 ACaslonPro-SemiboldItalic 
-ADFBaskerville 
-ADFBaskerville-Bold 
-ADFBaskerville-BoldItalic 
-ADFBaskerville-Italic 
-AGaramondPro-Bold 
-AGaramondPro-BoldItalic 
-AGaramondPro-Italic 
-AGaramondPro-Regular 
-ALM Fixed 
-ALMFixed 
-AR PL KaitiM Big5 
-AR PL KaitiM GB 
-AR PL Mingti2L Big5 
-AR PL SungtiL GB 
-Aboensis Regular 
-Aboriginal Serif 
-Academy Engraved LET Plain:1.0 
 Acathist 
 Accanthis ADF Std No3 Bold 
 Accanthis ADF Std No3 Bold Italic 
@@ -32,6 +18,10 @@ AccanthisADFStdNo3-Bold
 AccanthisADFStdNo3-BoldItalic 
 AccanthisADFStdNo3-Italic 
 AccanthisADFStdNo3-Regular 
+ADFBaskerville 
+ADFBaskerville-Bold 
+ADFBaskerville-BoldItalic 
+ADFBaskerville-Italic 
 AdobeFangsongStd-Regular 
 AdobeHeitiStd-Regular 
 AdobeKaitiStd-Regular 
@@ -66,6 +56,10 @@ AeSchola-BoldItalic
 AeSchola-Italic 
 Aether 
 African 
+AGaramondPro-Bold 
+AGaramondPro-BoldItalic 
+AGaramondPro-Italic 
+AGaramondPro-Regular 
 Alegreya 
 Alegreya Black 
 Alegreya Black Italic 
@@ -77,16 +71,6 @@ Alegreya Italic
 Alegreya Medium 
 Alegreya Medium Italic 
 Alegreya Regular 
-Alegreya SC Black 
-Alegreya SC Black Italic 
-Alegreya SC Bold 
-Alegreya SC Bold Italic 
-Alegreya SC ExtraBold 
-Alegreya SC ExtraBold Italic 
-Alegreya SC Italic 
-Alegreya SC Medium 
-Alegreya SC Medium Italic 
-Alegreya SC Regular 
 Alegreya Sans Black 
 Alegreya Sans Black Italic 
 Alegreya Sans Bold 
@@ -115,17 +99,29 @@ Alegreya Sans SC Thin
 Alegreya Sans SC Thin Italic 
 Alegreya Sans Thin 
 Alegreya Sans Thin Italic 
+Alegreya SC Black 
+Alegreya SC Black Italic 
+Alegreya SC Bold 
+Alegreya SC Bold Italic 
+Alegreya SC ExtraBold 
+Alegreya SC ExtraBold Italic 
+Alegreya SC Italic 
+Alegreya SC Medium 
+Alegreya SC Medium Italic 
+Alegreya SC Regular 
 AlgolRevived Medium 
 AlgolRevived Medium Slanted 
 AlgolRevived Regular 
 AlgolRevived Slanted 
 Alkalami Light 
 Alkalami Regular 
+ALM Fixed 
 Almendra Bold 
 Almendra Bold Italic 
 Almendra Italic 
 Almendra Regular 
 Almendra SC Regular 
+ALMFixed 
 Alpha Slab One Regular 
 American Typewriter 
 American Typewriter Bold 
@@ -295,6 +291,10 @@ Apple SD Gothic Neo Thin
 Apple SD Gothic Neo UltraLight 
 Apple Symbols 
 AppleGothic 
+AR PL KaitiM Big5 
+AR PL KaitiM GB 
+AR PL Mingti2L Big5 
+AR PL SungtiL GB 
 Archiv0 Bold 
 Archiv0 Bold Italic 
 Archiv0 Italic 
@@ -305,12 +305,12 @@ Archiv0 SemiBold
 Archiv0 SemiBold Italic 
 Arial 
 Arial Black 
-Arial Bold Italic 
 Arial Bold 
+Arial Bold Italic 
 Arial Italic 
 Arial Narrow 
-Arial Narrow Bold Italic 
 Arial Narrow Bold 
+Arial Narrow Bold Italic 
 Arial Narrow Italic 
 Arial Rounded MT Bold 
 Arial Unicode MS 
@@ -366,6 +366,7 @@ AtkinsonHyperlegible-Bold
 AtkinsonHyperlegible-BoldItalic 
 AtkinsonHyperlegible-Italic 
 AtkinsonHyperlegible-Regular 
+augie 
 Avenir Black 
 Avenir Black Oblique 
 Avenir Book 
@@ -402,20 +403,20 @@ Avenir Oblique
 Avenir Roman 
 AvenirNext-UltraLight 
 Ayuthaya 
-BKM-cmmi12 
 Baekmuk Batang 
 Baekmuk Dotum 
 Baekmuk Gulim 
 Baekmuk Headline 
+bailey rose 
 Baloo 2 Bold 
 Baloo 2 ExtraBold 
 Baloo 2 Medium 
 Baloo 2 Regular 
 Baloo 2 SemiBold 
-Bangla MN Bold 
 Bangla MN 
-Bangla Sangam MN Bold 
+Bangla MN Bold 
 Bangla Sangam MN 
+Bangla Sangam MN Bold 
 BaskarStc 
 Baskerville 
 Baskerville Bold 
@@ -452,6 +453,7 @@ Beuron Condensed Regular
 Beuron Extended Regular 
 Beuron Regular 
 Big Caslon Medium 
+biquad Regular 
 BirchStd 
 Bitstream Vera Sans 
 Bitstream Vera Sans Bold 
@@ -464,7 +466,10 @@ Bitstream Vera Sans Oblique
 Bitter Bold 
 Bitter Italic 
 Bitter Regular 
+BKM-cmmi12 
 BlackoakStd 
+blex 
+blsy 
 Bodoni 72 Bold 
 Bodoni 72 Book 
 Bodoni 72 Book Italic 
@@ -473,6 +478,8 @@ Bodoni 72 Oldstyle Book
 Bodoni 72 Oldstyle Book Italic 
 Bodoni 72 Smallcaps Book 
 Bodoni Ornaments 
+boggles 
+boggles Dark 
 Book Antiqua 
 Bookerly 
 Bradley Hand Bold 
@@ -483,55 +490,6 @@ Brill Roman
 Broadway BT 
 Brush Script MT Italic 
 BrushScriptStd 
-CCIcons 
-CMU Bright Bold Extended 
-CMU Bright Bold Extended Oblique 
-CMU Bright Oblique 
-CMU Bright Roman 
-CMU Bright SemiBold 
-CMU Bright SemiBold Oblique 
-CMU Bright SemiBoldOblique 
-CMU Classical Serif Italic 
-CMU Concrete Bold 
-CMU Concrete Bold Extended Italic 
-CMU Concrete Bold Extended Roman 
-CMU Concrete BoldItalic 
-CMU Concrete Italic 
-CMU Concrete Roman 
-CMU Sans Serif 
-CMU Sans Serif Bold 
-CMU Sans Serif Bold Extended 
-CMU Sans Serif Bold Extended Oblique 
-CMU Sans Serif BoldOblique 
-CMU Sans Serif Demi Condensed 
-CMU Sans Serif Demi Condensed DemiCondensed 
-CMU Sans Serif Medium 
-CMU Sans Serif Oblique 
-CMU Serif Bold 
-CMU Serif Bold Extended Italic 
-CMU Serif Bold Extended Roman 
-CMU Serif Bold Extended Slanted Roman 
-CMU Serif BoldItalic 
-CMU Serif Extra BoldSlanted 
-CMU Serif Extra RomanSlanted 
-CMU Serif Italic 
-CMU Serif Roman 
-CMU Serif Roman Bold Nonextended 
-CMU Serif Roman Slanted 
-CMU Serif Upright Italic 
-CMU Serif Upright Italic UprightItalic 
-CMU Typewriter Text Bold 
-CMU Typewriter Text Bold Italic 
-CMU Typewriter Text BoldItalic 
-CMU Typewriter Text Italic 
-CMU Typewriter Text Light 
-CMU Typewriter Text Light Oblique 
-CMU Typewriter Text LightOblique 
-CMU Typewriter Text Oblique 
-CMU Typewriter Text Regular 
-CMU Typewriter Text Variable Width 
-CMU Typewriter Text Variable Width Italic 
-CMU Typewriter Text Variable Width Medium 
 Cabin Bold 
 Cabin Bold Italic 
 Cabin Condensed Bold Condensed 
@@ -616,6 +574,7 @@ Caslon Antique Bold
 Caslon Antique Bold Italic 
 Caslon Antique Italic 
 CaslonOS-Regular 
+CCIcons 
 Chalkboard 
 Chalkboard Bold 
 Chalkboard SE Bold 
@@ -632,10 +591,10 @@ Charis SIL Bold Italic
 Charis SIL Italic 
 CharlemagneStd-Bold 
 Charter 
-Charter BT Bold Italic 
 Charter Black 
 Charter Black Italic 
 Charter Bold 
+Charter BT Bold Italic 
 Charter Italic 
 Charter Roman 
 CharterBT-Roman 
@@ -680,6 +639,54 @@ Clear Sans Medium Italic
 Clear Sans Thin 
 Clicky Bricks 
 Clip 
+CMU Bright Bold Extended 
+CMU Bright Bold Extended Oblique 
+CMU Bright Oblique 
+CMU Bright Roman 
+CMU Bright SemiBold 
+CMU Bright SemiBold Oblique 
+CMU Bright SemiBoldOblique 
+CMU Classical Serif Italic 
+CMU Concrete Bold 
+CMU Concrete Bold Extended Italic 
+CMU Concrete Bold Extended Roman 
+CMU Concrete BoldItalic 
+CMU Concrete Italic 
+CMU Concrete Roman 
+CMU Sans Serif 
+CMU Sans Serif Bold 
+CMU Sans Serif Bold Extended 
+CMU Sans Serif Bold Extended Oblique 
+CMU Sans Serif BoldOblique 
+CMU Sans Serif Demi Condensed 
+CMU Sans Serif Demi Condensed DemiCondensed 
+CMU Sans Serif Medium 
+CMU Sans Serif Oblique 
+CMU Serif Bold 
+CMU Serif Bold Extended Italic 
+CMU Serif Bold Extended Roman 
+CMU Serif Bold Extended Slanted Roman 
+CMU Serif BoldItalic 
+CMU Serif Extra BoldSlanted 
+CMU Serif Extra RomanSlanted 
+CMU Serif Italic 
+CMU Serif Roman 
+CMU Serif Roman Bold Nonextended 
+CMU Serif Roman Slanted 
+CMU Serif Upright Italic 
+CMU Serif Upright Italic UprightItalic 
+CMU Typewriter Text Bold 
+CMU Typewriter Text Bold Italic 
+CMU Typewriter Text BoldItalic 
+CMU Typewriter Text Italic 
+CMU Typewriter Text Light 
+CMU Typewriter Text Light Oblique 
+CMU Typewriter Text LightOblique 
+CMU Typewriter Text Oblique 
+CMU Typewriter Text Regular 
+CMU Typewriter Text Variable Width 
+CMU Typewriter Text Variable Width Italic 
+CMU Typewriter Text Variable Width Medium 
 Cochin 
 Cochin Bold 
 Cochin Bold Italic 
@@ -747,8 +754,8 @@ Copperplate
 Copperplate Bold 
 Copperplate Light 
 Corbel 
-Corbel Bold Italic 
 Corbel Bold 
+Corbel Bold Italic 
 Corbel Italic 
 Cormorant Garamond Bold 
 Cormorant Garamond Bold Italic 
@@ -768,11 +775,11 @@ Courier 10 Pitch Bold
 Courier 10 Pitch Bold Italic 
 Courier 10 Pitch Italic 
 Courier Bold 
-Courier Bold Oblique 
 Courier Bold 
+Courier Bold Oblique 
 Courier New 
-Courier New Bold Italic 
 Courier New Bold 
+Courier New Bold Italic 
 Courier New Italic 
 Courier Oblique 
 Crimson Bold 
@@ -805,8 +812,6 @@ Cyklop Italic
 Cyklop Regular 
 Cyklop-Italic 
 Cyklop-Regular 
-DIN Alternate Bold 
-DIN Condensed Bold 
 Darwin Serif Regular ALPHA 
 DarwinFont 
 David CLM Bold 
@@ -838,11 +843,13 @@ DejaVu Serif Condensed Bold
 DejaVu Serif Condensed Bold Italic 
 DejaVu Serif Condensed Italic 
 DejaVu Serif Italic 
-Devanagari Sangam MN Bold 
 Devanagari Sangam MN 
+Devanagari Sangam MN Bold 
 Didot 
 Didot Bold 
 Didot Italic 
+DIN Alternate Bold 
+DIN Condensed Bold 
 Domestic Manners 
 Domitian Bold 
 Domitian Bold Italic 
@@ -853,6 +860,168 @@ Domitian-BoldItalic
 Domitian-Italic 
 Domitian-Roman 
 Doulos SIL 
+drm10 
+drm11 
+drm12 
+drm14 
+drm17 
+drm24 
+drm6 
+drm7 
+drm8 
+drm9 
+drmb10 
+drmb11 
+drmb12 
+drmb14 
+drmb17 
+drmb24 
+drmb6 
+drmb7 
+drmb8 
+drmb9 
+drmbx10 
+drmbx11 
+drmbx12 
+drmbx14 
+drmbx17 
+drmbx24 
+drmbx6 
+drmbx7 
+drmbx8 
+drmbx9 
+drmgrk10 
+drmit10 
+drmit11 
+drmit12 
+drmit14 
+drmit17 
+drmit24 
+drmit6 
+drmit7 
+drmit8 
+drmit9 
+drmitbx10 
+drmitbx11 
+drmitbx12 
+drmitbx14 
+drmitbx17 
+drmitbx24 
+drmitbx6 
+drmitbx7 
+drmitbx8 
+drmitbx9 
+drmitsc10 
+drmitsc11 
+drmitsc12 
+drmitsc14 
+drmitsc17 
+drmitsc24 
+drmitsc6 
+drmitsc7 
+drmitsc8 
+drmitsc9 
+drmittc10 
+drmittc11 
+drmittc12 
+drmittc14 
+drmittc17 
+drmittc24 
+drmittc6 
+drmittc7 
+drmittc8 
+drmittc9 
+drml10 
+drml11 
+drml12 
+drml14 
+drml17 
+drml24 
+drml6 
+drml7 
+drml8 
+drml9 
+drmmi10 
+drmsc10 
+drmsc11 
+drmsc12 
+drmsc14 
+drmsc17 
+drmsc24 
+drmsc6 
+drmsc7 
+drmsc8 
+drmsc9 
+drmscbx10 
+drmscbx11 
+drmscbx12 
+drmscbx14 
+drmscbx17 
+drmscbx24 
+drmscbx6 
+drmscbx7 
+drmscbx8 
+drmscbx9 
+drmsl10 
+drmsl11 
+drmsl12 
+drmsl14 
+drmsl17 
+drmsl24 
+drmsl6 
+drmsl7 
+drmsl8 
+drmsl9 
+drmsy10 
+drmsym10 
+drmsym11 
+drmsym12 
+drmsym14 
+drmsym17 
+drmsym24 
+drmsym7 
+drmsym8 
+drmsym9 
+drmtc10 
+drmtc11 
+drmtc12 
+drmtc14 
+drmtc17 
+drmtc24 
+drmtc6 
+drmtc7 
+drmtc8 
+drmtc9 
+drmtcbx10 
+drmtcbx11 
+drmtcbx12 
+drmtcbx14 
+drmtcbx17 
+drmtcbx24 
+drmtcbx6 
+drmtcbx7 
+drmtcbx8 
+drmtcbx9 
+drmui10 
+drmui11 
+drmui12 
+drmui14 
+drmui17 
+drmui24 
+drmui6 
+drmui7 
+drmui8 
+drmui9 
+drmuibx10 
+drmuibx11 
+drmuibx12 
+drmuibx14 
+drmuibx17 
+drmuibx24 
+drmuibx6 
+drmuibx7 
+drmuibx8 
+drmuibx9 
 Droid Sans 
 Droid Sans Bold 
 Droid Sans Mono 
@@ -871,12 +1040,6 @@ EB Garamond Medium Italic
 EB Garamond Regular 
 EB Garamond SemiBold 
 EB Garamond SemiBold Italic 
-ET Bembo Bold 
-ET Bembo Bold Italic 
-ET Bembo Italic 
-ET Bembo Regular 
-ETbb Bold 
-ETbb Regular 
 EccentricStd 
 Eczar 
 Eczar Bold 
@@ -886,14 +1049,22 @@ Eczar SemiBold
 Einstein 
 Einstein Left 
 Einstein Right 
+erewhon Bold 
 Erewhon Bold 
 Erewhon Bold Italic 
 Erewhon Bold Slanted 
 Erewhon Italic 
 Erewhon Math Regular 
+erewhon Regular 
 Erewhon Regular 
 Erewhon Regular Slanted 
 Erewhon-Math-Bold 
+ET Bembo Bold 
+ET Bembo Bold Italic 
+ET Bembo Italic 
+ET Bembo Regular 
+ETbb Bold 
+ETbb Regular 
 Euler Math 
 Euphemia UCAS 
 Euphemia UCAS Bold 
@@ -909,6 +1080,10 @@ Fantasque Sans Mono Bold
 Fantasque Sans Mono Bold Italic 
 Fantasque Sans Mono Italic 
 Fantasque Sans Mono Regular 
+fbb Bold 
+fbb Bold Italic 
+fbb Italic 
+fbb Regular 
 Fedorovsk Unicode 
 Fetamont Bold 
 Fetamont Bold 8 
@@ -1041,16 +1216,16 @@ Free Serifb Bold
 Free Serifb Bold Italic 
 Free Serifb Italic 
 FreeMono 
-FreeMono Bold Oblique 
 FreeMono Bold 
+FreeMono Bold Oblique 
 FreeMono Oblique 
 FreeSans 
-FreeSans Bold Oblique 
 FreeSans Bold 
+FreeSans Bold Oblique 
 FreeSans Oblique 
 FreeSerif 
-FreeSerif Bold Italic 
 FreeSerif Bold 
+FreeSerif Bold Italic 
 FreeSerif Italic 
 FreeSerifb Bold 
 FreeSerifb Bold Italic 
@@ -1066,31 +1241,6 @@ Futura Condensed ExtraBold
 Futura Condensed Medium 
 Futura Medium 
 Futura Medium Italic 
-GFS Artemisia Bold 
-GFS Artemisia Bold Italic 
-GFS Artemisia Italic 
-GFS Artemisia Regular 
-GFS Didot Bold Italic 
-GFS Didot Italic 
-GFS Didot Regular 
-GFS Neohellenic Math 
-GFSArtemisia-Bold 
-GFSArtemisia-BoldItalic 
-GFSArtemisia-Italic 
-GFSArtemisia-Regular 
-GFSBodoni-Bold 
-GFSBodoni-BoldItalic 
-GFSBodoni-Italic 
-GFSBodoni-Regular 
-GFSDidot-Bold 
-GFSDidot-BoldItalic 
-GFSDidot-Italic 
-GFSDidot-Regular 
-GFSNeohellenic-Bold 
-GFSNeohellenic-BoldItalic 
-GFSNeohellenic-Italic 
-GFSNeohellenic-Regular 
-GFSOlga-Regular 
 Galvji 
 Galvji Oblique 
 Galvji-Bold 
@@ -1137,10 +1287,36 @@ Gentium Plus Bold
 Gentium Plus Bold Italic 
 Gentium Plus Italic 
 Georgia 
-Georgia Bold Italic 
 Georgia Bold 
+Georgia Bold Italic 
 Georgia Italic 
+GFS Artemisia Bold 
+GFS Artemisia Bold Italic 
+GFS Artemisia Italic 
+GFS Artemisia Regular 
+GFS Didot Bold Italic 
+GFS Didot Italic 
+GFS Didot Regular 
+GFS Neohellenic Math 
+GFSArtemisia-Bold 
+GFSArtemisia-BoldItalic 
+GFSArtemisia-Italic 
+GFSArtemisia-Regular 
+GFSBodoni-Bold 
+GFSBodoni-BoldItalic 
+GFSBodoni-Italic 
+GFSBodoni-Regular 
+GFSDidot-Bold 
+GFSDidot-BoldItalic 
+GFSDidot-Italic 
+GFSDidot-Regular 
+GFSNeohellenic-Bold 
+GFSNeohellenic-BoldItalic 
+GFSNeohellenic-Italic 
+GFSNeohellenic-Regular 
+GFSOlga-Regular 
 GiddyupStd 
+gift 1 
 Gill Sans 
 Gill Sans Bold 
 Gill Sans Bold Italic 
@@ -1148,15 +1324,15 @@ Gill Sans Italic
 Gill Sans Light 
 Gill Sans Light Italic 
 Gill Sans MT 
-Gill Sans MT Bold Italic 
 Gill Sans MT Bold 
+Gill Sans MT Bold Italic 
 Gill Sans MT Italic 
 Gill Sans SemiBold 
 Gill Sans SemiBold Italic 
 Gill Sans UltraBold 
 Gillius ADF Bold 
-Gillius ADF Bold Cond Italic 
 Gillius ADF Bold Cond 
+Gillius ADF Bold Cond Italic 
 Gillius ADF Bold Italic 
 Gillius ADF Cond Bold 
 Gillius ADF Cond Bold Italic 
@@ -1166,8 +1342,8 @@ Gillius ADF Cond Regular
 Gillius ADF Condensed 
 Gillius ADF Italic 
 Gillius ADF No2 Bold 
-Gillius ADF No2 Bold Cond Italic 
 Gillius ADF No2 Bold Cond 
+Gillius ADF No2 Bold Cond Italic 
 Gillius ADF No2 Bold Italic 
 Gillius ADF No2 Cond Bold 
 Gillius ADF No2 Cond Bold Italic 
@@ -1204,13 +1380,13 @@ Gotu
 Grantha Sangam MN Bold 
 Grantha Sangam MN Regular 
 Guilty 
-Gujarati Sangam MN Bold 
 Gujarati Sangam MN 
+Gujarati Sangam MN Bold 
 Gulim 
-Gurmukhi MN Bold 
 Gurmukhi MN 
-Gurmukhi Sangam MN Bold 
+Gurmukhi MN Bold 
 Gurmukhi Sangam MN 
+Gurmukhi Sangam MN Bold 
 Hadasim CLM Bold 
 Hadasim CLM BoldOblique 
 Hadasim CLM Regular 
@@ -1219,28 +1395,28 @@ Hammerhead
 Hammerhead Black 
 Hammerhead Bold 
 Hammerhead Medium 
+Harano Aji Gothic 
 Harano Aji Gothic Bold 
 Harano Aji Gothic ExtraLight 
 Harano Aji Gothic Heavy 
 Harano Aji Gothic Light 
 Harano Aji Gothic Medium 
 Harano Aji Gothic Normal 
-Harano Aji Gothic 
+Harano Aji Mincho 
 Harano Aji Mincho Bold 
 Harano Aji Mincho ExtraLight 
 Harano Aji Mincho Heavy 
 Harano Aji Mincho Light 
 Harano Aji Mincho Medium 
 Harano Aji Mincho SemiBold 
-Harano Aji Mincho 
 Harding Text Web Regular Regular 
 Heiti SC Light 
 Heiti SC Medium 
 Heiti TC Light 
 Heiti TC Medium 
 Helvetica 
-Helvetica Bold Oblique 
 Helvetica Bold 
+Helvetica Bold Oblique 
 Helvetica Light 
 Helvetica Light Oblique 
 Helvetica Neue 
@@ -1269,12 +1445,6 @@ Hind Madurai Light
 Hind Madurai Medium 
 Hind Madurai Regular 
 Hind Madurai SemiBold 
-HiraMaruPro-W4 
-HiraMaruProN-W4 
-HiraMinPro-W3 
-HiraMinPro-W6 
-HiraMinProN-W3 
-HiraMinProN-W6 
 Hiragino Kaku Gothic Pro W3 
 Hiragino Kaku Gothic Pro W6 
 Hiragino Kaku Gothic ProN W3 
@@ -1293,6 +1463,12 @@ Hiragino Sans W6
 Hiragino Sans W7 
 Hiragino Sans W8 
 Hiragino Sans W9 
+HiraMaruPro-W4 
+HiraMaruProN-W4 
+HiraMinPro-W3 
+HiraMinPro-W6 
+HiraMinProN-W3 
+HiraMinProN-W6 
 HoboStd 
 Hoefler Text 
 Hoefler Text Black 
@@ -1301,6 +1477,12 @@ Hoefler Text Italic
 Horizon W03 Rg 
 Hydrophilia Iced 
 Hydrophilia Liquid 
+Ibarra Real Nova Bold 
+Ibarra Real Nova Bold Italic 
+Ibarra Real Nova Italic 
+Ibarra Real Nova Regular 
+Ibarra Real Nova SemiBold 
+Ibarra Real Nova SemiBold Italic 
 IBM Plex Mono 
 IBM Plex Mono Bold 
 IBM Plex Mono Bold Italic 
@@ -1370,21 +1552,9 @@ IM FELL English Roman
 IM FELL English SC 
 IM_FELL_FLOWERS_1 
 IM_FELL_FLOWERS_2 
-IPAGothic 
-IPAMincho 
-IPAPGothic 
-IPAPMincho 
-IPAexGothic 
-IPAexMincho 
-Ibarra Real Nova Bold 
-Ibarra Real Nova Bold Italic 
-Ibarra Real Nova Italic 
-Ibarra Real Nova Regular 
-Ibarra Real Nova SemiBold 
-Ibarra Real Nova SemiBold Italic 
 Impact 
-InaiMathi Bold 
 InaiMathi 
+InaiMathi Bold 
 Inclusive Sans Italic 
 Inclusive Sans Regular 
 Inconsolata Bold 
@@ -1471,6 +1641,12 @@ Iowan Old Style Bold
 Iowan Old Style Bold Italic 
 Iowan Old Style Italic 
 Iowan Old Style Roman 
+IPAexGothic 
+IPAexMincho 
+IPAGothic 
+IPAMincho 
+IPAPGothic 
+IPAPMincho 
 Iwona Bold 
 Iwona BoldItalic 
 Iwona Cond-Bold 
@@ -1553,6 +1729,12 @@ Josefin Sans SemiBold
 Josefin Sans SemiBold Italic 
 Josefin Sans Thin 
 Josefin Sans Thin Italic 
+jsMath-cmbx10 
+jsMath-cmex10 
+jsMath-cmmi10 
+jsMath-cmr10 
+jsMath-cmsy10 
+jsMath-cmti10 
 Junicode Bold 
 Junicode Bold Italic 
 Junicode Cond 
@@ -1595,10 +1777,10 @@ Junicode VF (family)
 Junicode VF Italic 
 Junicode VF Regular 
 Kalpurush 
-Kannada MN Bold 
 Kannada MN 
-Kannada Sangam MN Bold 
+Kannada MN Bold 
 Kannada Sangam MN 
+Kannada Sangam MN Bold 
 Karla (family) 
 Karla Bold 
 Karla Bold Italic 
@@ -1638,6 +1820,10 @@ Keter YG Bold
 Keter YG Bold Oblique 
 Keter YG Medium 
 Keter YG Medium Oblique 
+khatalmaqala 
+khatalmaqala Bold 
+khatalmaqala Bold Italic 
+khatalmaqala Italic 
 Khmer MN 
 Khmer MN Bold 
 Khmer Sangam MN 
@@ -1647,21 +1833,21 @@ Kinnari Bold Italic
 Kinnari Bold Oblique 
 Kinnari Italic 
 Kinnari Oblique 
+Kohinoor Bangla 
 Kohinoor Bangla Bold 
 Kohinoor Bangla Light 
 Kohinoor Bangla Medium 
 Kohinoor Bangla Semibold 
-Kohinoor Bangla 
 Kohinoor Devanagari Bold 
 Kohinoor Devanagari Light 
 Kohinoor Devanagari Medium 
 Kohinoor Devanagari Regular 
 Kohinoor Devanagari Semibold 
+Kohinoor Telugu 
 Kohinoor Telugu Bold 
 Kohinoor Telugu Light 
 Kohinoor Telugu Medium 
 Kohinoor Telugu Semibold 
-Kohinoor Telugu 
 KozGoPro-Bold 
 KozGoPro-ExtraLight 
 KozGoPro-Heavy 
@@ -1737,7 +1923,146 @@ KurierLight-Italic
 KurierLight-Regular 
 KurierMedium-Italic 
 KurierMedium-Regular 
+Laksaman 
+Laksaman Bold 
+Laksaman Bold Italic 
+Laksaman Italic 
+Lao MN 
+Lao MN Bold 
+Lao Sangam MN 
+LatinModernMath-Regular 
+Lato Black 
+Lato Black Italic 
+Lato Bold 
+Lato Bold Italic 
+Lato Hairline 
+Lato Hairline Italic 
+Lato Heavy 
+Lato Heavy Italic 
+Lato Italic 
+Lato Light 
+Lato Light Italic 
+Lato Math 
+Lato Medium 
+Lato Medium Italic 
+Lato Regular 
+Lato Semibold 
+Lato Semibold Italic 
+Lato Thin 
+Lato Thin Italic 
 LEGO BRIX 
+Lete Sans Math 
+Lete Sans Math Bold 
+LetterGothicStd 
+LetterGothicStd-Bold 
+LetterGothicStd-BoldSlanted 
+LetterGothicStd-Slanted 
+Lexend Deca Regular 
+Lexend Exa Regular 
+Lexend Giga Regular 
+Lexend Mega Regular 
+Lexend Peta Regular 
+Lexend Tera Regular 
+Lexend Zetta Regular 
+Liberation Serif Bold 
+Liberation Serif Bold Italic 
+Liberation Serif Italic 
+Liberation Serif Regular 
+Libertinus Keyboard Regular 
+Libertinus Math Regular 
+Libertinus Mono Regular 
+Libertinus Sans Bold 
+Libertinus Sans Italic 
+Libertinus Sans Regular 
+Libertinus Serif Bold 
+Libertinus Serif Bold Italic 
+Libertinus Serif Display Regular 
+Libertinus Serif Italic 
+Libertinus Serif Regular 
+Libertinus Serif Semibold 
+Libertinus Serif Semibold Italic 
+Libre Baskerville 
+Libre Baskerville Bold 
+Libre Baskerville Bold 
+Libre Baskerville Italic 
+Libre Bodoni Bold 
+Libre Bodoni Bold Italic 
+Libre Bodoni Italic 
+Libre Bodoni Regular 
+Libre Bskvl Bold Italic 
+Libre Csln Bold Italic 
+Libre Franklin Black 
+Libre Franklin Black Italic 
+Libre Franklin Bold 
+Libre Franklin Bold Italic 
+Libre Franklin ExtraBold 
+Libre Franklin ExtraBold Italic 
+Libre Franklin ExtraLight 
+Libre Franklin ExtraLight Italic 
+Libre Franklin Italic 
+Libre Franklin Light 
+Libre Franklin Light Italic 
+Libre Franklin Medium 
+Libre Franklin Medium Italic 
+Libre Franklin Regular 
+Libre Franklin SemiBold 
+Libre Franklin SemiBold Italic 
+Libre Franklin Thin 
+Libre Franklin Thin Italic 
+LibreBodoni-Bold 
+LibreBodoni-BoldItalic 
+LibreBodoni-Italic 
+LibreBodoni-Regular 
+LibreCaslonText-Bold 
+LibreCaslonText-Italic 
+LibreCaslonText-Regular 
+LibreCsln-BoldItalic 
+linea-basic-10 
+linea-basic-elaboration-10 
+linea-ecommerce-10 
+linea-music-10 
+linea-software-10 
+Linguistics Pro Bold 
+Linguistics Pro Bold 
+Linguistics Pro Bold Italic 
+Linguistics Pro BoldItalic 
+Linguistics Pro Italic 
+Linguistics Pro Italic 
+Linguistics Pro Regular 
+Linguistics Pro Regular 
+Linux Biolinum Keyboard O 
+Linux Biolinum O 
+Linux Biolinum O Bold 
+Linux Biolinum O Bold Oblique 
+Linux Biolinum O Italic 
+Linux Libertine 
+Linux Libertine Bold 
+Linux Libertine Bold Italic 
+Linux Libertine Capitals 
+Linux Libertine Capitals Bold 
+Linux Libertine Capitals Italic 
+Linux Libertine Capitals Semibold Italic 
+Linux Libertine Display 
+Linux Libertine Display Capitals 
+Linux Libertine Display O 
+Linux Libertine Italic 
+Linux Libertine Mono O 
+Linux Libertine Mono O Bold 
+Linux Libertine Mono O Bold Oblique 
+Linux Libertine Mono O Oblique 
+Linux Libertine O 
+Linux Libertine O Bold 
+Linux Libertine O Bold Italic 
+Linux Libertine O Italic 
+Linux Libertine O Semibold 
+Linux Libertine O Semibold Italic 
+Linux Libertine Semibold 
+Linux Libertine Semibold Italic 
+Linux Libertine Slanted 
+Linux Libertine Slanted Bold 
+Linux Libertine Slanted Semibold 
+LithosPro-Black 
+LithosPro-Regular 
 LMMono10 Italic 
 LMMono10 Regular 
 LMMono10-Italic 
@@ -1882,140 +2207,6 @@ LMSansQuot8-Bold
 LMSansQuot8-BoldOblique 
 LMSansQuot8-Oblique 
 LMSansQuot8-Regular 
-Laksaman 
-Laksaman Bold 
-Laksaman Bold Italic 
-Laksaman Italic 
-Lao MN 
-Lao MN Bold 
-Lao Sangam MN 
-LatinModernMath-Regular 
-Lato Black 
-Lato Black Italic 
-Lato Bold 
-Lato Bold Italic 
-Lato Hairline 
-Lato Hairline Italic 
-Lato Heavy 
-Lato Heavy Italic 
-Lato Italic 
-Lato Light 
-Lato Light Italic 
-Lato Math 
-Lato Medium 
-Lato Medium Italic 
-Lato Regular 
-Lato Semibold 
-Lato Semibold Italic 
-Lato Thin 
-Lato Thin Italic 
-Lete Sans Math 
-Lete Sans Math Bold 
-LetterGothicStd 
-LetterGothicStd-Bold 
-LetterGothicStd-BoldSlanted 
-LetterGothicStd-Slanted 
-Lexend Deca Regular 
-Lexend Exa Regular 
-Lexend Giga Regular 
-Lexend Mega Regular 
-Lexend Peta Regular 
-Lexend Tera Regular 
-Lexend Zetta Regular 
-Liberation Serif Bold 
-Liberation Serif Bold Italic 
-Liberation Serif Italic 
-Liberation Serif Regular 
-Libertinus Keyboard Regular 
-Libertinus Math Regular 
-Libertinus Mono Regular 
-Libertinus Sans Bold 
-Libertinus Sans Italic 
-Libertinus Sans Regular 
-Libertinus Serif Bold 
-Libertinus Serif Bold Italic 
-Libertinus Serif Display Regular 
-Libertinus Serif Italic 
-Libertinus Serif Regular 
-Libertinus Serif Semibold 
-Libertinus Serif Semibold Italic 
-Libre Baskerville 
-Libre Baskerville Bold 
-Libre Baskerville Bold 
-Libre Baskerville Italic 
-Libre Bodoni Bold 
-Libre Bodoni Bold Italic 
-Libre Bodoni Italic 
-Libre Bodoni Regular 
-Libre Bskvl Bold Italic 
-Libre Csln Bold Italic 
-Libre Franklin Black 
-Libre Franklin Black Italic 
-Libre Franklin Bold 
-Libre Franklin Bold Italic 
-Libre Franklin ExtraBold 
-Libre Franklin ExtraBold Italic 
-Libre Franklin ExtraLight 
-Libre Franklin ExtraLight Italic 
-Libre Franklin Italic 
-Libre Franklin Light 
-Libre Franklin Light Italic 
-Libre Franklin Medium 
-Libre Franklin Medium Italic 
-Libre Franklin Regular 
-Libre Franklin SemiBold 
-Libre Franklin SemiBold Italic 
-Libre Franklin Thin 
-Libre Franklin Thin Italic 
-LibreBodoni-Bold 
-LibreBodoni-BoldItalic 
-LibreBodoni-Italic 
-LibreBodoni-Regular 
-LibreCaslonText-Bold 
-LibreCaslonText-Italic 
-LibreCaslonText-Regular 
-LibreCsln-BoldItalic 
-Linguistics Pro Bold 
-Linguistics Pro Bold Italic 
-Linguistics Pro Bold 
-Linguistics Pro BoldItalic 
-Linguistics Pro Italic 
-Linguistics Pro Italic 
-Linguistics Pro Regular 
-Linguistics Pro Regular 
-Linux Biolinum Keyboard O 
-Linux Biolinum O 
-Linux Biolinum O Bold 
-Linux Biolinum O Bold Oblique 
-Linux Biolinum O Italic 
-Linux Libertine 
-Linux Libertine Bold 
-Linux Libertine Bold Italic 
-Linux Libertine Capitals 
-Linux Libertine Capitals Bold 
-Linux Libertine Capitals Italic 
-Linux Libertine Capitals Semibold Italic 
-Linux Libertine Display 
-Linux Libertine Display Capitals 
-Linux Libertine Display O 
-Linux Libertine Italic 
-Linux Libertine Mono O 
-Linux Libertine Mono O Bold 
-Linux Libertine Mono O Bold Oblique 
-Linux Libertine Mono O Oblique 
-Linux Libertine O 
-Linux Libertine O Bold 
-Linux Libertine O Bold Italic 
-Linux Libertine O Italic 
-Linux Libertine O Semibold 
-Linux Libertine O Semibold Italic 
-Linux Libertine Semibold 
-Linux Libertine Semibold Italic 
-Linux Libertine Slanted 
-Linux Libertine Slanted Bold 
-Linux Libertine Slanted Semibold 
-LithosPro-Black 
-LithosPro-Regular 
 LobsterTwo 
 LobsterTwo-Bold 
 LobsterTwo-BoldItalic 
@@ -2027,24 +2218,15 @@ Loma
 Loma Bold 
 Loma Bold Oblique 
 Loma Oblique 
+Luciole 
 Luciole Bold 
 Luciole Bold Italic 
 Luciole Italic 
-Luciole 
 Luminari 
-MFB Oldstyle Bold 
-MFB Oldstyle Italic 
-MFB Oldstyle Regular 
-MS Gothic 
-MS Mincho 
-MS PGothic 
-MS PMincho 
-MS Reference Sans Serif 
-Malayalam MN Bold 
 Malayalam MN 
-Malayalam Sangam MN Bold 
+Malayalam MN Bold 
 Malayalam Sangam MN 
-MarVoSym 
+Malayalam Sangam MN Bold 
 Marcellus 
 Marcellus SC 
 Marion Bold 
@@ -2052,10 +2234,11 @@ Marion Italic
 Marion Regular 
 Marker Felt Thin 
 Marker Felt Wide 
-Meiryo Bold Italic 
-Meiryo Bold 
-Meiryo Italic 
+MarVoSym 
 Meiryo 
+Meiryo Bold 
+Meiryo Bold Italic 
+Meiryo Italic 
 Menaion Unicode 
 Menlo Bold 
 Menlo Bold Italic 
@@ -2084,6 +2267,9 @@ MesloLGS NF Regular
 MesquiteStd 
 Metropolis 
 Mezenets Unicode 
+MFB Oldstyle Bold 
+MFB Oldstyle Italic 
+MFB Oldstyle Regular 
 Miama Nueva 
 Microsoft Sans Serif 
 MinionPro-Bold 
@@ -2367,6 +2553,11 @@ Montserrat SemiBold
 Montserrat SemiBold Italic 
 Montserrat Thin 
 Montserrat Thin Italic 
+MS Gothic 
+MS Mincho 
+MS PGothic 
+MS PMincho 
+MS Reference Sans Serif 
 Mukta Bold 
 Mukta ExtraBold 
 Mukta ExtraLight 
@@ -2396,6 +2587,72 @@ MyriadPro-It
 MyriadPro-Regular 
 MyriadPro-Semibold 
 MyriadPro-SemiboldIt 
+Nachlieli CLM Bold 
+Nachlieli CLM Bold Oblique 
+Nachlieli CLM Light 
+Nachlieli CLM Light Oblique 
+Neon 
+NewCenturySchlbkLTStd-Bd 
+NewCenturySchlbkLTStd-BdIt 
+NewCenturySchlbkLTStd-It 
+NewCenturySchlbkLTStd-Roman 
+NewCM Mono 10 Bold 
+NewCM Mono 10 BoldOblique 
+NewCM Mono 10 Italic 
+NewCM Mono 10 Regular 
+NewCM Sans 10 Bold 
+NewCM Sans 10 BoldOblique 
+NewCM Sans 10 Oblique 
+NewCM08Devanagari-Book 
+NewCM10Devanagari-Regular 
+NewCMMath-Regular 
+NewCMUncial08-Bold 
+NewCMUncial08-Book 
+NewCMUncial08-Regular 
+NewCMUncial10-Bold 
+NewCMUncial10-Book 
+NewComputerModern 10 Bold 
+NewComputerModern 10 Bold 
+NewComputerModern 10 Book 
+NewComputerModern 10 Book 
+NewComputerModern 10 BookItalic 
+NewComputerModern 10 Italic 
+NewComputerModern 10 Regular 
+NewComputerModern 10 Regular 
+NewComputerModern 10 Regular 
+NewComputerModern08-Book 
+NewComputerModern08-BookItalic 
+NewComputerModern08-Oblique 
+NewComputerModern08-Regular 
+NewComputerModern08-Regular 
+NewComputerModern08-Regular 
+NewComputerModern10-Regular 
+NewComputerModernMath-Bold 
+NewComputerModernMath-Book 
+NewComputerModernMath-Regular 
+NewComputerModernMono10-Bold 
+NewComputerModernMono10-BoldOblique 
+NewComputerModernMono10-Book 
+NewComputerModernMono10-BookItalic 
+NewComputerModernMono10-Italic 
+NewComputerModernMono10-Regular 
+NewComputerModernSans08-Book 
+NewComputerModernSans08-BookOblique 
+NewComputerModernSans10-Bold 
+NewComputerModernSans10-BoldOblique 
+NewComputerModernSans10-Book 
+NewComputerModernSans10-BookOblique 
+NewComputerModernSans10-Oblique 
+NewComputerModernUncial10-Regular 
+NewComputerRoman 10 Bold Italic 
+Nimbus Mono 
+Nimbus Mono Bold 
+Nimbus Mono Bold Oblique 
+Nimbus Mono Oblique 
+NimbusSanLBol 
+NimbusSanLBolIta 
+NimbusSanLReg 
+NimbusSanLRegIta 
 NMB10 
 NMBX10 
 NMBX12 
@@ -2449,72 +2706,6 @@ NMTI12
 NMTI7 
 NMTI8 
 NMTI9 
-Nachlieli CLM Bold 
-Nachlieli CLM Bold Oblique 
-Nachlieli CLM Light 
-Nachlieli CLM Light Oblique 
-Neon 
-NewCM Mono 10 Bold 
-NewCM Mono 10 BoldOblique 
-NewCM Mono 10 Italic 
-NewCM Mono 10 Regular 
-NewCM Sans 10 Bold 
-NewCM Sans 10 BoldOblique 
-NewCM Sans 10 Oblique 
-NewCM08Devanagari-Book 
-NewCM10Devanagari-Regular 
-NewCMMath-Regular 
-NewCMUncial08-Bold 
-NewCMUncial08-Book 
-NewCMUncial08-Regular 
-NewCMUncial10-Bold 
-NewCMUncial10-Book 
-NewCenturySchlbkLTStd-Bd 
-NewCenturySchlbkLTStd-BdIt 
-NewCenturySchlbkLTStd-It 
-NewCenturySchlbkLTStd-Roman 
-NewComputerModern 10 Bold 
-NewComputerModern 10 Bold 
-NewComputerModern 10 Book 
-NewComputerModern 10 Book 
-NewComputerModern 10 BookItalic 
-NewComputerModern 10 Italic 
-NewComputerModern 10 Regular 
-NewComputerModern 10 Regular 
-NewComputerModern 10 Regular 
-NewComputerModern08-Book 
-NewComputerModern08-BookItalic 
-NewComputerModern08-Oblique 
-NewComputerModern08-Regular 
-NewComputerModern08-Regular 
-NewComputerModern08-Regular 
-NewComputerModern10-Regular 
-NewComputerModernMath-Bold 
-NewComputerModernMath-Book 
-NewComputerModernMath-Regular 
-NewComputerModernMono10-Bold 
-NewComputerModernMono10-BoldOblique 
-NewComputerModernMono10-Book 
-NewComputerModernMono10-BookItalic 
-NewComputerModernMono10-Italic 
-NewComputerModernMono10-Regular 
-NewComputerModernSans08-Book 
-NewComputerModernSans08-BookOblique 
-NewComputerModernSans10-Bold 
-NewComputerModernSans10-BoldOblique 
-NewComputerModernSans10-Book 
-NewComputerModernSans10-BookOblique 
-NewComputerModernSans10-Oblique 
-NewComputerModernUncial10-Regular 
-NewComputerRoman 10 Bold Italic 
-Nimbus Mono Bold Oblique 
-Nimbus Mono Bold 
-Nimbus Mono Oblique 
-Nimbus Mono 
-NimbusSanLBol 
-NimbusSanLBolIta 
-NimbusSanLReg 
-NimbusSanLRegIta 
 Norasi 
 Norasi Bold 
 Norasi Bold Italic 
@@ -2868,6 +3059,15 @@ Noto Serif SemiCondensed Thin Italic
 Noto Serif Thin 
 Noto Serif Thin Italic 
 NovelDeco 
+npxsups Bold 
+npxsups Bold Italic 
+npxsups Bold Slanted 
+npxsups Italic 
+npxsups Regular 
+npxsups Slanted 
+ntxsups Bold 
+ntxsups Bold Italic 
+ntxsups Italic 
 NuevaStd-BoldCond 
 NuevaStd-BoldCondItalic 
 NuevaStd-Cond 
@@ -2889,6 +3089,12 @@ Nunito SemiBold Italic
 OCR-A 
 OCR-A Regular 
 OCRAStd 
+ocrb10 
+ocrb5 
+ocrb6 
+ocrb7 
+ocrb8 
+ocrb9 
 Old Standard Bold 
 Old Standard Bold Italic 
 Old Standard Italic 
@@ -2924,27 +3130,6 @@ Overlock-BlackItalic
 Overlock-Bold 
 Overlock-BoldItalic 
 Overlock-Italic 
-PMingLiU 
-PSTricks Dots 
-PT Mono 
-PT Mono Bold 
-PT Mono Regular 
-PT Sans 
-PT Sans Bold 
-PT Sans Bold Italic 
-PT Sans Caption 
-PT Sans Caption Bold 
-PT Sans Italic 
-PT Sans Narrow 
-PT Sans Narrow Bold 
-PT Sans Regular 
-PT Serif 
-PT Serif Bold 
-PT Serif Bold Italic 
-PT Serif Caption 
-PT Serif Caption Italic 
-PT Serif Italic 
-PT Serif Regular 
 Palatino 
 Palatino Bold 
 Palatino Bold Italic 
@@ -2990,8 +3175,8 @@ Pennstander Regular
 Pennstander SemiBold 
 Pennstander Thin 
 Perpetua 
-Perpetua Bold Italic 
 Perpetua Bold 
+Perpetua Bold Italic 
 Perpetua Italic 
 Phosphate Inline 
 Phosphate Solid 
@@ -3002,6 +3187,7 @@ Playfair Display Black Italic
 Playfair Display Bold 
 Playfair Display Bold Italic 
 Playfair Display Italic 
+PMingLiU 
 Pochaevsk Unicode 
 Poiret One 
 Poiret One Bold 
@@ -3011,8 +3197,28 @@ Ponomar Unicode
 PoplarStd 
 Porcelain 
 PrestigeEliteStd-Bd 
-Proxima Sera Italic 
 Proxima Sera 
+Proxima Sera Italic 
+PSTricks Dots 
+PT Mono 
+PT Mono Bold 
+PT Mono Regular 
+PT Sans 
+PT Sans Bold 
+PT Sans Bold Italic 
+PT Sans Caption 
+PT Sans Caption Bold 
+PT Sans Italic 
+PT Sans Narrow 
+PT Sans Narrow Bold 
+PT Sans Regular 
+PT Serif 
+PT Serif Bold 
+PT Serif Bold Italic 
+PT Serif Caption 
+PT Serif Caption Italic 
+PT Serif Italic 
+PT Serif Regular 
 Punk Nova 
 Punk Nova Bold 
 Punk Nova Bold Slanted 
@@ -3182,22 +3388,6 @@ Quattrocento Sans Bold
 Quattrocento Sans Bold Italic 
 Quattrocento Sans Italic 
 Questrial Regular 
-RIT Ezhuthu Regular 
-RIT Karuna Bold 
-RIT Keraleeyam Italic 
-RIT Keraleeyam Regular 
-RIT Kutty Bold 
-RIT Meera New Regular 
-RIT Panmana Regular 
-RIT Rachana 
-RIT Rachana Bold 
-RIT Rachana Bold Italic 
-RIT Rachana Italic 
-RIT Sundar Bold 
-RIT TN Joy Bold 
-RIT TN Joy Extra Bold 
-RIT TN Joy Regular 
-RIT Uroob 
 Raleway Black 
 Raleway Black Italic 
 Raleway Bold 
@@ -3235,6 +3425,22 @@ Raleway-SemiBoldItalic
 Raleway-Thin 
 Raleway-ThinItalic 
 Redacted Regular 
+RIT Ezhuthu Regular 
+RIT Karuna Bold 
+RIT Keraleeyam Italic 
+RIT Keraleeyam Regular 
+RIT Kutty Bold 
+RIT Meera New Regular 
+RIT Panmana Regular 
+RIT Rachana 
+RIT Rachana Bold 
+RIT Rachana Bold Italic 
+RIT Rachana Italic 
+RIT Sundar Bold 
+RIT TN Joy Bold 
+RIT TN Joy Extra Bold 
+RIT TN Joy Regular 
+RIT Uroob 
 Roboto 
 Roboto Black 
 Roboto Black Italic 
@@ -3323,43 +3529,6 @@ Rosario Regular
 Rosario SemiBold 
 Rosario SemiBold Italic 
 RosewoodStd-Regular 
-SBL Greek 
-SBL Hebrew 
-STEP 
-STEP Bold 
-STEP Bold Italic 
-STEP Italic 
-STEP Regular 
-STHeiti 
-STIX Two Math Regular 
-STIX Two Text 
-STIX Two Text (family) 
-STIX Two Text Bold 
-STIX Two Text Bold Italic 
-STIX Two Text Italic 
-STIX Two Text Medium 
-STIX Two Text Medium Italic 
-STIX Two Text Regular 
-STIX Two Text SemiBold 
-STIX Two Text SemiBold Italic 
-STIX-Bold 
-STIX-BoldItalic 
-STIX-Italic 
-STIX-Regular 
-STIXGeneral Bold 
-STIXGeneral BoldItalic 
-STIXGeneral Italic 
-STIXGeneral Regular 
-STIXGeneral-Bold 
-STIXGeneral-BoldItalic 
-STIXGeneral-Italic 
-STIXGeneral-Regular 
-STIXMath Regular 
-STIXMath-Regular 
-STKaiti 
-STSong 
-STXihei 
-SVRsymbols 
 Saira Stencil One Regular 
 Samba 
 SambaSemiBoldSoft 
@@ -3371,6 +3540,8 @@ Sawasdee
 Sawasdee Bold 
 Sawasdee Bold Oblique 
 Sawasdee Oblique 
+SBL Greek 
+SBL Hebrew 
 Segoe UI Emoji 
 Semafor Bold 
 Semafor Bold-Slant 
@@ -3419,18 +3590,18 @@ Shofar Demi-Bold
 Shofar Demi-Bold Oblique 
 Shofar Regular 
 Shofar Regular Oblique 
-Shree Devanagari 714 Bold Italic 
-Shree Devanagari 714 Bold 
-Shree Devanagari 714 Italic 
 Shree Devanagari 714 
+Shree Devanagari 714 Bold 
+Shree Devanagari 714 Bold Italic 
+Shree Devanagari 714 Italic 
 SignPainter-HouseScript 
 SignPainter-HouseScriptSemibold 
 Silom 
-SimSun 
 Simple CLM Bold 
 Simple CLM BoldOblique 
 Simple CLM Medium 
 Simple CLM MediumOblique 
+SimSun 
 Sinhala MN 
 Sinhala MN Bold 
 Sinhala Sangam MN 
@@ -3522,6 +3693,40 @@ Spectral Regular
 Spectral SemiBold 
 Spectral SemiBold Italic 
 StencilStd 
+STEP 
+STEP Bold 
+STEP Bold Italic 
+STEP Italic 
+STEP Regular 
+STHeiti 
+STIX Two Math Regular 
+STIX Two Text 
+STIX Two Text (family) 
+STIX Two Text Bold 
+STIX Two Text Bold Italic 
+STIX Two Text Italic 
+STIX Two Text Medium 
+STIX Two Text Medium Italic 
+STIX Two Text Regular 
+STIX Two Text SemiBold 
+STIX Two Text SemiBold Italic 
+STIX-Bold 
+STIX-BoldItalic 
+STIX-Italic 
+STIX-Regular 
+STIXGeneral Bold 
+STIXGeneral BoldItalic 
+STIXGeneral Italic 
+STIXGeneral Regular 
+STIXGeneral-Bold 
+STIXGeneral-BoldItalic 
+STIXGeneral-Italic 
+STIXGeneral-Regular 
+STIXMath Regular 
+STIXMath-Regular 
+STKaiti 
+STSong 
+STXihei 
 SukhumvitSet-Bold 
 SukhumvitSet-Light 
 SukhumvitSet-Medium 
@@ -3536,20 +3741,34 @@ Superclarendon Italic
 Superclarendon Light 
 Superclarendon Light Italic 
 Superclarendon Regular 
+SVRsymbols 
+System Font 
+System Font 
 System Font Regular Italic 
-System Font 
-System Font 
-TF_Motte Beta 
 Tahoma 
 Tahoma Bold 
 Talos-Bold 
 Talos-BoldItalic 
 Talos-Italic 
 Talos-Regular 
-Tamil MN Bold 
 Tamil MN 
-Tamil Sangam MN Bold 
+Tamil MN Bold 
 Tamil Sangam MN 
+Tamil Sangam MN Bold 
+Techkin CE 
+TektonPro-Bold 
+TektonPro-BoldCond 
+TektonPro-BoldExt 
+TektonPro-BoldObl 
+Telugu MN 
+Telugu MN Bold 
+Telugu Sangam MN 
+Telugu Sangam MN Bold 
+Tempora Bold 
+Tempora Bold Italic 
+Tempora Italic 
+Tempora LGC Unicode 
+Tempora Regular 
 TeXGyreAdventor Bold 
 TeXGyreAdventor BoldItalic 
 TeXGyreAdventor Italic 
@@ -3649,20 +3868,7 @@ TeXGyreTermesX Bold Slanted
 TeXGyreTermesX Italic 
 TeXGyreTermesX Regular 
 TeXGyreTermesX Slanted 
-Techkin CE 
-TektonPro-Bold 
-TektonPro-BoldCond 
-TektonPro-BoldExt 
-TektonPro-BoldObl 
-Telugu MN Bold 
-Telugu MN 
-Telugu Sangam MN Bold 
-Telugu Sangam MN 
-Tempora Bold 
-Tempora Bold Italic 
-Tempora Italic 
-Tempora LGC Unicode 
-Tempora Regular 
+TF_Motte Beta 
 Theano Didot Bold 
 Theano Didot Regular 
 Theano Modern Bold 
@@ -3672,12 +3878,12 @@ Theano Old Style Regular
 Thonburi 
 Thonburi Bold 
 Thonburi Light 
-Times Bold Italic 
 Times Bold 
+Times Bold Italic 
 Times Italic 
 Times New Roman 
-Times New Roman Bold Italic 
 Times New Roman Bold 
+Times New Roman Bold Italic 
 Times New Roman Italic 
 Times Roman 
 Tinos 
@@ -3718,44 +3924,34 @@ TrajanPro-Bold
 TrajanPro-Regular 
 Trattatello 
 Trebuchet MS 
-Trebuchet MS Bold Italic 
 Trebuchet MS Bold 
+Trebuchet MS Bold Italic 
 Trebuchet MS Italic 
 Triodion Unicode 
 Tw Cen MT 
-Tw Cen MT Bold Italic 
 Tw Cen MT Bold 
+Tw Cen MT Bold Italic 
 Tw Cen MT Italic 
 UM Typewriter Oblique 
-UMTypewriter 
-UMTypewriter-Bold 
-UMTypewriter-BoldItalic 
-UMTypewriter-Italic 
-URW Classico Bold 
-URW Classico Bold Italic 
-URW Classico Italic 
-URW Classico Regular 
-URWClassico Bold 
-URWClassico Regular 
-URWClassico-Bold 
-URWClassico-BoldItalic 
-URWClassico-Italic 
-URWClassico-Regular 
 Umpush 
 Umpush Bold 
 Umpush Bold Oblique 
 Umpush Light 
 Umpush Light Oblique 
 Umpush Oblique 
-Un Batang Bold 
+UMTypewriter 
+UMTypewriter-Bold 
+UMTypewriter-BoldItalic 
+UMTypewriter-Italic 
 Un Batang 
+Un Batang Bold 
+Un Dinaru 
 Un Dinaru Bold 
 Un Dinaru Light 
-Un Dinaru 
-Un Dotum Bold 
 Un Dotum 
-Un Graphic Bold 
+Un Dotum Bold 
 Un Graphic 
+Un Graphic Bold 
 Un Gungseo 
 Un Jamo Batang 
 Un Jamo Dotum 
@@ -3763,17 +3959,13 @@ Un Jamo Novel
 Un Jamo Sora 
 Un Pen 
 Un Penheulim 
-Un Pilgi Bold 
 Un Pilgi 
+Un Pilgi Bold 
 Un Pilgia 
 Un Shinmun 
 Un Taza 
 Un Vada 
 Un Yetgul 
-UniversLTStd 
-UniversLTStd-Bold 
-UniversLTStd-BoldObl 
-UniversLTStd-Obl 
 Universalis ADF Std Bold 
 Universalis ADF Std Bold Cond 
 Universalis ADF Std Bold Italic 
@@ -3789,6 +3981,20 @@ UniversalisADFStd-Cond
 UniversalisADFStd-CondItalic 
 UniversalisADFStd-Italic 
 UniversalisADFStd-Regular 
+UniversLTStd 
+UniversLTStd-Bold 
+UniversLTStd-BoldObl 
+UniversLTStd-Obl 
+URW Classico Bold 
+URW Classico Bold Italic 
+URW Classico Italic 
+URW Classico Regular 
+URWClassico Bold 
+URWClassico Regular 
+URWClassico-Bold 
+URWClassico-BoldItalic 
+URWClassico-Italic 
+URWClassico-Regular 
 Venturis ADF Bold 
 Venturis ADF Bold Italic 
 Venturis ADF Cd Bold 
@@ -3868,11 +4074,11 @@ VenturisSans ADF Cd Bold
 VenturisSans ADF Cd Bold Italic 
 VenturisSans ADF Cd Italic 
 VenturisSans ADF Cd Regular 
+VenturisSans ADF Ex 
 VenturisSans ADF Ex Bold 
 VenturisSans ADF Ex Bold Italic 
 VenturisSans ADF Ex Italic 
 VenturisSans ADF Ex Regular 
-VenturisSans ADF Ex 
 VenturisSans ADF Italic 
 VenturisSans ADF Lt Bold 
 VenturisSans ADF Lt Bold Italic 
@@ -3883,10 +4089,10 @@ VenturisSans ADF No2 Bold Italic
 VenturisSans ADF No2 Cd Bold 
 VenturisSans ADF No2 Cd Italic 
 VenturisSans ADF No2 Cd Regular 
+VenturisSans ADF No2 Ex 
 VenturisSans ADF No2 Ex Bold 
 VenturisSans ADF No2 Ex Italic 
 VenturisSans ADF No2 Ex Regular 
-VenturisSans ADF No2 Ex 
 VenturisSans ADF No2 Italic 
 VenturisSans ADF No2 Regular 
 VenturisSans ADF Regular 
@@ -3919,8 +4125,8 @@ VenturisSansADFNo2Ex-Bold
 VenturisSansADFNo2Ex-BoldItal 
 VenturisSansADFNo2Ex-Regular 
 Verdana 
-Verdana Bold Italic 
 Verdana Bold 
+Verdana Bold Italic 
 Verdana Italic 
 Vilnius 
 Vollkorn Black 
@@ -3973,10 +4179,10 @@ Ysabeau Bold
 Ysabeau Bold Italic 
 Ysabeau ExtraBold 
 Ysabeau ExtraBold Italic 
-Ysabeau ExtraLight 
-Ysabeau ExtraLight Italic 
 Ysabeau Extralight 
+Ysabeau ExtraLight 
 Ysabeau Extralight Italic 
+Ysabeau ExtraLight Italic 
 Ysabeau Hairline 
 Ysabeau Hairline Italic 
 Ysabeau Heavy 
@@ -4013,10 +4219,10 @@ Ysabeau SC Regular
 Ysabeau SC Semibold 
 Ysabeau SC Semilight 
 Ysabeau SC Thin 
-Ysabeau SemiBold 
-Ysabeau SemiBold Italic 
 Ysabeau Semibold 
+Ysabeau SemiBold 
 Ysabeau Semibold Italic 
+Ysabeau SemiBold Italic 
 Ysabeau Semilight 
 Ysabeau Semilight Italic 
 Ysabeau Thin 
@@ -4025,212 +4231,6 @@ Ysabeau Ultrabold
 Zapf Chancery Italic:001.007 
 ZapfChanceryMediumItalic 
 Zapfino 
-augie 
-bailey rose 
-biquad Regular 
-blex 
-blsy 
-boggles 
-boggles Dark 
-drm10 
-drm11 
-drm12 
-drm14 
-drm17 
-drm24 
-drm6 
-drm7 
-drm8 
-drm9 
-drmb10 
-drmb11 
-drmb12 
-drmb14 
-drmb17 
-drmb24 
-drmb6 
-drmb7 
-drmb8 
-drmb9 
-drmbx10 
-drmbx11 
-drmbx12 
-drmbx14 
-drmbx17 
-drmbx24 
-drmbx6 
-drmbx7 
-drmbx8 
-drmbx9 
-drmgrk10 
-drmit10 
-drmit11 
-drmit12 
-drmit14 
-drmit17 
-drmit24 
-drmit6 
-drmit7 
-drmit8 
-drmit9 
-drmitbx10 
-drmitbx11 
-drmitbx12 
-drmitbx14 
-drmitbx17 
-drmitbx24 
-drmitbx6 
-drmitbx7 
-drmitbx8 
-drmitbx9 
-drmitsc10 
-drmitsc11 
-drmitsc12 
-drmitsc14 
-drmitsc17 
-drmitsc24 
-drmitsc6 
-drmitsc7 
-drmitsc8 
-drmitsc9 
-drmittc10 
-drmittc11 
-drmittc12 
-drmittc14 
-drmittc17 
-drmittc24 
-drmittc6 
-drmittc7 
-drmittc8 
-drmittc9 
-drml10 
-drml11 
-drml12 
-drml14 
-drml17 
-drml24 
-drml6 
-drml7 
-drml8 
-drml9 
-drmmi10 
-drmsc10 
-drmsc11 
-drmsc12 
-drmsc14 
-drmsc17 
-drmsc24 
-drmsc6 
-drmsc7 
-drmsc8 
-drmsc9 
-drmscbx10 
-drmscbx11 
-drmscbx12 
-drmscbx14 
-drmscbx17 
-drmscbx24 
-drmscbx6 
-drmscbx7 
-drmscbx8 
-drmscbx9 
-drmsl10 
-drmsl11 
-drmsl12 
-drmsl14 
-drmsl17 
-drmsl24 
-drmsl6 
-drmsl7 
-drmsl8 
-drmsl9 
-drmsy10 
-drmsym10 
-drmsym11 
-drmsym12 
-drmsym14 
-drmsym17 
-drmsym24 
-drmsym7 
-drmsym8 
-drmsym9 
-drmtc10 
-drmtc11 
-drmtc12 
-drmtc14 
-drmtc17 
-drmtc24 
-drmtc6 
-drmtc7 
-drmtc8 
-drmtc9 
-drmtcbx10 
-drmtcbx11 
-drmtcbx12 
-drmtcbx14 
-drmtcbx17 
-drmtcbx24 
-drmtcbx6 
-drmtcbx7 
-drmtcbx8 
-drmtcbx9 
-drmui10 
-drmui11 
-drmui12 
-drmui14 
-drmui17 
-drmui24 
-drmui6 
-drmui7 
-drmui8 
-drmui9 
-drmuibx10 
-drmuibx11 
-drmuibx12 
-drmuibx14 
-drmuibx17 
-drmuibx24 
-drmuibx6 
-drmuibx7 
-drmuibx8 
-drmuibx9 
-erewhon Bold 
-erewhon Regular 
-fbb Bold 
-fbb Bold Italic 
-fbb Italic 
-fbb Regular 
-gift 1 
-jsMath-cmbx10 
-jsMath-cmex10 
-jsMath-cmmi10 
-jsMath-cmr10 
-jsMath-cmsy10 
-jsMath-cmti10 
-khatalmaqala 
-khatalmaqala Bold 
-khatalmaqala Bold Italic 
-khatalmaqala Italic 
-linea-basic-10 
-linea-basic-elaboration-10 
-linea-ecommerce-10 
-linea-music-10 
-linea-software-10 
-npxsups Bold 
-npxsups Bold Italic 
-npxsups Bold Slanted 
-npxsups Italic 
-npxsups Regular 
-npxsups Slanted 
-ntxsups Bold 
-ntxsups Bold Italic 
-ntxsups Italic 
-ocrb10 
-ocrb5 
-ocrb6 
-ocrb7 
-ocrb8 
-ocrb9 
 zco Bold 
 zco Bold Oblique 
 zco Light 

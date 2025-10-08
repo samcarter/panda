@@ -4,6 +4,8 @@
 
 ### New
 
+- BusyPanda: added latin modern 
+
 ### Changed
 
 ### Fixed
