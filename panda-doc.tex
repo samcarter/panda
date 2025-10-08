@@ -142,9 +142,11 @@ cmr: \rule{\CleverPanda{42}}{8pt}
 
 \subsection{Special Case (\TikZ)}
 
-The \saminline|\CleverPanda{}| command works well, as long as the height of the full stop is available when the macro is used. Unfortunately, that's not always the case.
+The \saminline|\CleverPanda{}| command works well, as long as the height of the full stop is available when the macro is used.
+Unfortunately, that's not always the case.
 
-One notable problem case are \TikZ\ options, e.g. while setting line widths. As a workaround, one can use the command \saminline|\CleverPandaSet| before the \TikZ\ picture and then \saminline|\CleverPandaGet{}| in the \TikZ\ options to access the stroke width:
+One notable problem case are \TikZ\ options, e.g.\ while setting line widths.
+As a workaround, one can use the command \saminline|\CleverPandaSet| before the \TikZ\ picture and then \saminline|\CleverPandaGet{}| in the \TikZ\ options to access the stroke width:
 \begin{tcolorbox}[title={\TikZ}]
 \begin{samcode}
 \documentclass{article}
@@ -266,7 +268,8 @@ Normal bamboo: \busybamboo
 Extra yummy bamboo: \busybamboo
 \end{tcolorbox}
 
-In the example above, \saminline|\BusyPanda{}| is used in combination with the height of the letter I. This ensures that stroke width will scale with the size of the text.
+In the example above, \saminline|\BusyPanda{}| is used in combination with the height of the letter I.
+This ensures that stroke width will scale with the size of the text.
 
 \subsection{Unsupported fonts}
 
