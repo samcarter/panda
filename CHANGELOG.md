@@ -4,6 +4,15 @@
 
 ### New
 
+### Changed
+
+### Fixed
+
+
+## [v0.2]
+
+### New
+
 - BusyPanda: added latin modern 
 - BusyPanda: added `unknown error` package option to enable an error for unknown fonts in all engines
 
@@ -19,5 +28,6 @@
 
 ------
 
-[Unreleased]: https://github.com/samcarter/panda/compare/v0.1...HEAD
+[Unreleased]: https://github.com/samcarter/panda/compare/v0.2...HEAD
+[v0.2]: https://github.com/samcarter/panda/compare/v0.1...v0.2
 [v0.1]: https://github.com/samcarter/panda/compare/v0.0...v0.1
