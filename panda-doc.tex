@@ -275,12 +275,14 @@ This ensures that stroke width will scale with the size of the text.
 
 Given the seemingly infinite number of fonts out there, this package will never be able to support them all -- but more can be added with your help!
 
-If the font you are using isn't yet supported (\saminline|\BusyPanda{}| will return 1, like for Computer Modern Roman and -- if compiled with \LuaLaTeX\ -- a warning can be found in the .log file), then please get the test document from:
+If the font you are using isn't yet supported, then please get the test document from:
 
 \url{https://github.com/samcarter/panda/blob/main/BusyPanda_unsupportedFonts.tex}
 
 You only need to change the font name in the second line and compile with either \saminline|pdflatex| or \saminline|lualatex|.
 Then open an issue at \url{https://github.com/samcarter/panda/issues} and upload the compiled PDF there.
+
+How to know if your font is unsupported? \saminline|\BusyPanda{}| will return the same value as for Computer Modern Roman (1) and, if compiled with \LuaLaTeX\, a warning can be found in the .log file. Furthermore, the package option \saminline|unknown error| can be used to enable an error for all engines.
 
 \clearpage
 \section{Examples}

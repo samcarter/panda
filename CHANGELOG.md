@@ -5,6 +5,7 @@
 ### New
 
 - BusyPanda: added latin modern 
+- BusyPanda: added `unknown error` package option to enable an error for unknown fonts in all engines
 
 ### Changed
 

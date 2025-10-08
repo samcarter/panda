@@ -14,11 +14,38 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ProvidesPackage{BusyPanda}[2025/10/08 version v0.1 Estimating blackness of fonts]
 
-\DeclareKeys{scale.store=\BusyPanda@scale}
+\RequirePackage{expkv}
+
+\newif\ifBusyPanda@unknownerror
+
+\DeclareKeys{
+  scale.store=\BusyPanda@scale,
+  unknown error.if= BusyPanda@unknownerror
+}
 \SetKeys{scale=1.0}
 \ProcessKeyOptions
 
 \ExplSyntaxOn
+\cs_new_nopar:Npn \__panda_unknown_font {
+  \ifBusyPanda@unknownerror
+    \ekverr{panda}{
+      Font~not~in~look-up~table.^^J
+      Please~see~section~3.3~of~the~documentation.^^J
+    }
+  \else
+    \sys_if_engine_luatex:T {
+      % from https://topanswers.xyz/tex?q=8144#a7753
+      \directlua{
+        texio.write_nl("
+          \string\n
+          Package~panda~Warning:~ Font~\luaescapestring{\f@family}~not~in~look-up~table\string\n
+          (panda)\@spaces\@spaces\@spaces\@spaces Please~see~section~3.3~of~the~documentation.\string\n\string\n
+        ")
+      }
+    }
+  \fi
+}
+
 \NewExpandableDocumentCommand{ \BusyPanda } { m } {
   \fp_eval:n {
     \tl_if_blank:nTF { #1 } { \BusyPanda@scale } { #1 }
@@ -4428,11 +4455,8 @@
         {ztm Regular Oblique(0)}{1.24055}
         {ztm Regular(0)}{1.23939}
       }{
-        \sys_if_engine_luatex:T {
-          % from https://topanswers.xyz/tex?q=8144#a7753
-          \directlua{texio.write_nl("\string\n Package~panda~Warning:~ Font~\luaescapestring{\f@family}~not~in~look-up~table\string\n (panda)\@spaces\@spaces\@spaces\@spaces Please~see~section~3.3~of~the~documentation.\string\n\string\n")}
-        }
-        1.37779
+        \__panda_unknown_font
+        1
       }
     }{
       % normal fonts
@@ -8839,10 +8863,7 @@
         {ztm Regular Oblique(0)}{1.24055}
         {ztm Regular(0)}{1.23939}
       }{
-        \sys_if_engine_luatex:T {
-          % from https://topanswers.xyz/tex?q=8144#a7753
-          \directlua{texio.write_nl("\string\n Package~panda~Warning:~ Font~\luaescapestring{\f@family}~not~in~look-up~table\string\n (panda)\@spaces\@spaces\@spaces\@spaces Please~see~section~3.3~of~the~documentation.\string\n\string\n")}
-        }
+        \__panda_unknown_font
         1
       }
     }
