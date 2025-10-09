@@ -23,7 +23,7 @@
 
 \dim_new:N \l__panda_stroke_dim
 
-\cs_new_nopar:Npn \__panda_factor {
+\cs_new_nopar:Npn \__panda_factor:N {
   \tl_if_head_eq_charcode:VNT \f@series b {
     \str_case_e:nnT { \f@family } {
       {bodoni}{1.0}
@@ -181,7 +181,7 @@
     \fp_eval:n {
       \tl_if_blank:nTF { #1 } { \l__panda_clever_scale_fp } { #1 }
       *
-      \__panda_factor
+      \__panda_factor:N
     }
     \tex_fontcharht:D \tex_font:D `.
   }
@@ -192,7 +192,7 @@
     \fp_eval:n {
       \tl_if_blank:nTF { #1 } { \l__panda_clever_scale_fp } { #1 }
       *
-      \__panda_factor
+      \__panda_factor:N
     }
     \l__panda_stroke_dim
   }

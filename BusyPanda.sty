@@ -28,7 +28,7 @@
   \RequirePackage{expkv}
 }
 
-\cs_new_nopar:Npn \__panda_unknown_font {
+\cs_new_nopar:Npn \__panda_unknown_font:N {
   \bool_if:nTF { \l__panda_unknownerror_bool } {
     \exp_args:Nne
     \ekverr{panda}{
@@ -4458,7 +4458,7 @@
         {ztm Regular Oblique(0)}{1.24055}
         {ztm Regular(0)}{1.23939}
       }{
-        \__panda_unknown_font
+        \__panda_unknown_font:N
         1
       }
     }{
@@ -8866,7 +8866,7 @@
         {ztm Regular Oblique(0)}{1.24055}
         {ztm Regular(0)}{1.23939}
       }{
-        \__panda_unknown_font
+        \__panda_unknown_font:N
         1
       }
     }
