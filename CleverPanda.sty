@@ -14,12 +14,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ProvidesPackage{CleverPanda}[2025/10/09 version v0.2 Estimating blackness of fonts]
 
-\DeclareKeys{scale.code = \def\CleverPanda@scale{#1}}
-\SetKeys{scale=1.0}
-\ProcessKeyOptions
-
 \ExplSyntaxOn
-\dim_new:N \l__cleverpanda_stroke_dim
+\keys_define:nn { clever@panda } {
+  scale.fp_set:N = \l__panda_clever_scale_fp,
+  scale.initial:n = 1.0,
+}
+\ProcessKeyOptions[clever@panda]
+
+\dim_new:N \l__panda_stroke_dim
 
 \cs_new_nopar:Npn \__panda_factor {
   \tl_if_head_eq_charcode:VNT \f@series b {
@@ -177,7 +179,7 @@
 \NewExpandableDocumentCommand{ \CleverPanda }{ m }{
   \dim_eval:n {
     \fp_eval:n {
-      \tl_if_blank:nTF { #1 } { \CleverPanda@scale } { #1 }
+      \tl_if_blank:nTF { #1 } { \l__panda_clever_scale_fp } { #1 }
       *
       \__panda_factor
     }
@@ -188,16 +190,16 @@
 \NewExpandableDocumentCommand{ \CleverPandaGet }{ m }{
   \dim_eval:n {
     \fp_eval:n {
-      \tl_if_blank:nTF { #1 } { \CleverPanda@scale } { #1 }
+      \tl_if_blank:nTF { #1 } { \l__panda_clever_scale_fp } { #1 }
       *
       \__panda_factor
     }
-    \l__cleverpanda_stroke_dim
+    \l__panda_stroke_dim
   }
 }
 
 \NewDocumentCommand{ \CleverPandaSet }{ }{
-  \dim_set:Nn \l__cleverpanda_stroke_dim { \tex_fontcharht:D \tex_font:D `. }
+  \dim_set:Nn \l__panda_stroke_dim { \tex_fontcharht:D \tex_font:D `. }
 }
 
 \ExplSyntaxOff

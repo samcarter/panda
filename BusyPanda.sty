@@ -14,25 +14,27 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ProvidesPackage{BusyPanda}[2025/10/09 version v0.2 Estimating blackness of fonts]
 
-\RequirePackage{expkv}
-
-\newif\ifBusyPanda@unknownerror
-
-\DeclareKeys{
-  scale.store=\BusyPanda@scale,
-  unknown error.if= BusyPanda@unknownerror
-}
-\SetKeys{scale=1.0}
-\ProcessKeyOptions
-
 \ExplSyntaxOn
+
+\keys_define:nn { busy@panda } {
+  scale.fp_set:N = \l__panda_busy_scale_fp,
+  scale.initial:n = 1.0,
+  unknown~error.bool_set:N= \l__panda_unknownerror_bool,
+  unknown~error.initial:n = false
+}
+\ProcessKeyOptions[busy@panda]
+
+\bool_if:nT { \l__panda_unknownerror_bool } {
+  \RequirePackage{expkv}
+}
+
 \cs_new_nopar:Npn \__panda_unknown_font {
-  \ifBusyPanda@unknownerror
+  \bool_if:nTF { \l__panda_unknownerror_bool } {
     \ekverr{panda}{
       Font~not~in~look-up~table.^^J
       Please~see~section~3.3~of~the~documentation.^^J
     }
-  \else
+  }{
     \sys_if_engine_luatex:T {
       % from https://topanswers.xyz/tex?q=8144#a7753
       \directlua{
@@ -43,12 +45,12 @@
         ")
       }
     }
-  \fi
+  }
 }
 
 \NewExpandableDocumentCommand{ \BusyPanda } { m } {
   \fp_eval:n {
-    \tl_if_blank:nTF { #1 } { \BusyPanda@scale } { #1 }
+    \tl_if_blank:nTF { #1 } { \l__panda_busy_scale_fp } { #1 }
     *
     \tl_if_head_eq_charcode:VNTF \f@series b {
       % bold fonts
