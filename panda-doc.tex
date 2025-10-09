@@ -269,7 +269,7 @@ Extra yummy bamboo: \busybamboo
 \end{tcolorbox}
 
 In the example above, \saminline|\BusyPanda{}| is used in combination with the height of the letter I.
-This ensures that stroke width will scale with the size of the text.
+This ensures that the stroke width will scale with the size of the text.
 
 \subsection{Unsupported fonts}
 
@@ -289,7 +289,11 @@ How to know if your font is unsupported? \saminline|\BusyPanda{}| will return th
 
 \ExplSyntaxOn
 
-\clist_const:Nn \c_fonts_clist { AccanthisADFStdNoThree-LF, Alegreya-OsF, Alegreya-TLF, AnonymousPro, antp, antt, anttc, anttl, anttlc, artemisia, augie, auncl, bch, bodoni, Cabin-TLF, Caladea-TLF, cantarell-OsF, ccr, Cinzel-LF, CinzelDecorative-LF, ClearSans-TLF, clm, clmd, clmqs, clms, clmt, clmv, cmbr, cmdh, cmin, cmr, cmss, cmtt, cmvtt, comfortaa, Crlt-TLF, cyklop, DejaVuSans-TLF, DejaVuSansMono-TLF, DejaVuSerif-TLF, droidsans, droidsansmono, droidserif, EBGaramond-OsF, erewhon-OsF, fav, fbb-LF, FiraSans-TLF, frc, fve, fvm, fvs, GilliusADF-LF, GilliusADFNoTwo-LF, Heuristica-TLF, iwona, iwonac, iwonal, iwonalc, jkp, jkp, jkpl, jkpss, jkpss, jkptt, jkpx, kurier, kurierc, kurierl, kurierlc, lato-OsF, Lbstr-LF, LibreBskvl-LF, LibreCsln-TLF, LinuxBiolinumT-OsF, LinuxLibertineDisplayT-OsF, LinuxLibertineMonoT-TLF, LinuxLibertineT-OsF, Merriwthr-OsF, MerriwthrSans-TLF, MintSpirit-LF, nanumgt, nanummj, neohellenic, opensans-TLF, Ovrlck-LF, Ovrlck-LF, pag, pbk, pcr, phv, PlyfrDisplay-OsF, pnc, ppl, ptm, PTMono-TLF, PTSans-TLF, PTSansCaption-TLF, PTSansNarrow-TLF, PTSerif-TLF, PTSerifCaption-TLF, put, pzc, qag, qbk, qcr, qcs, qhv, qhvc, qpl, qtm, Quattro-LF, QuattroSans-LF, Roboto-TLF, RobotoSlab-TLF, SourceCodePro-TLF, SourceSansPro-TLF, sqrc, stix, ua1, uaq, udidot, ugm, ugq, ul9, ulg, UniversalisADFStd-LF, ybd, ybv, yes, yfrak, yly, yrd, yv1, yv1d, yv2, yv3, yvo, yvod, yvt, yvtd, zgmx, zi4 }
+\clist_const:Nn \c_fonts_clist {
+%<*fontlist>
+AccanthisADFStdNoThree-LF, Alegreya-OsF, Alegreya-TLF, AnonymousPro, antp, antt, anttc, anttl, anttlc, artemisia, augie, auncl, bch, bodoni, Cabin-TLF, Caladea-TLF, cantarell-OsF, ccr, Cinzel-LF, CinzelDecorative-LF, ClearSans-TLF, clm, clmd, clmqs, clms, clmt, clmv, cmbr, cmdh, cmin, cmr, cmss, cmtt, cmvtt, comfortaa, Crlt-TLF, cyklop, DejaVuSans-TLF, DejaVuSansMono-TLF, DejaVuSerif-TLF, droidsans, droidsansmono, droidserif, EBGaramond-OsF, erewhon-OsF, fav, fbb-LF, FiraSans-TLF, frc, fve, fvm, fvs, GilliusADF-LF, GilliusADFNoTwo-LF, Heuristica-TLF, iwona, iwonac, iwonal, iwonalc, jkp, jkp, jkpl, jkpss, jkpss, jkptt, jkpx, kurier, kurierc, kurierl, kurierlc, lato-OsF, Lbstr-LF, LibreBskvl-LF, LibreCsln-TLF, LinuxBiolinumT-OsF, LinuxLibertineDisplayT-OsF, LinuxLibertineMonoT-TLF, LinuxLibertineT-OsF, lmr, lmss, lmtt, lmvtt, Merriwthr-OsF, MerriwthrSans-TLF, MintSpirit-LF, nanumgt, nanummj, neohellenic, opensans-TLF, Ovrlck-LF, Ovrlck-LF, pag, pbk, pcr, phv, PlyfrDisplay-OsF, pnc, ppl, ptm, PTMono-TLF, PTSans-TLF, PTSansCaption-TLF, PTSansNarrow-TLF, PTSerif-TLF, PTSerifCaption-TLF, put, pzc, qag, qbk, qcr, qcs, qhv, qhvc, qpl, qtm, Quattro-LF, QuattroSans-LF, Roboto-TLF, RobotoSlab-TLF, SourceCodePro-TLF, SourceSansPro-TLF, sqrc, stix, ua1, uaq, udidot, ugm, ugq, ul9, ulg, UniversalisADFStd-LF, ybd, ybv, yes, yfrak, yly, yrd, yv1, yv1d, yv2, yv3, yvo, yvod, yvt, yvtd, zgmx, zi4%
+%</fontlist>
+}
 
 % from https://tex.stackexchange.com/a/728458/36296
 \tl_new:N \l_panda_tblr_spec_tl
