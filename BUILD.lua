@@ -17,4 +17,5 @@ ctansummary = "A package to estimate the blackness of fonts"
 -- https://github.com/samcarter/beamertheme-sam/blob/main/build-settings.lua
 local common_settings, build_settings = pcall(require, "../beamertheme-sam/build-settings.lua")
 
-excludefiles = {"DOCUMENTATION.pdf","BusyPanda_test.pdf","CleverPanda_test.pdf"}
+table.insert(excludefiles, "BusyPanda_test.pdf")
+table.insert(excludefiles, "CleverPanda_test.pdf")
