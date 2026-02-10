@@ -19,3 +19,4 @@ local common_settings, build_settings = pcall(require, "../beamertheme-sam/build
 
 table.insert(excludefiles, "BusyPanda_test.pdf")
 table.insert(excludefiles, "CleverPanda_test.pdf")
+table.insert(excludefiles, "BusyPanda_fonttest.pdf")

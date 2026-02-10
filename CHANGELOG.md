@@ -6,6 +6,8 @@
 
 ### Changed
 
+- removed unncessary file from ctan upload
+
 ### Fixed
 
 
