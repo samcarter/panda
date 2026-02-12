@@ -15,7 +15,7 @@
 
 ### Changed
 
-- removed unncessary file from ctan upload
+- removed unnecessary file from ctan upload
 
 ### Fixed
 
