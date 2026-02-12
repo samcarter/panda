@@ -6,6 +6,15 @@
 
 ### Changed
 
+### Fixed
+
+
+## [v0.3]
+
+### New
+
+### Changed
+
 - removed unncessary file from ctan upload
 
 ### Fixed
@@ -30,6 +39,7 @@
 
 ------
 
-[Unreleased]: https://github.com/samcarter/panda/compare/v0.2...HEAD
+[Unreleased]: https://github.com/samcarter/panda/compare/v0.3...HEAD
+[v0.3]: https://github.com/samcarter/panda/compare/v0.2...v0.3
 [v0.2]: https://github.com/samcarter/panda/compare/v0.1...v0.2
 [v0.1]: https://github.com/samcarter/panda/compare/v0.0...v0.1
